@@ -1,5 +1,20 @@
 /** Ionic CSS Variables **/
+@font-face {
+   font-family: 'PT Sans';
+   src: url('../fonts/PTSans-Regular.ttf');
+   font-weight: 200;
+   font-style: normal;
+ }
+ @font-face {
+   font-family: 'PT Sans';
+   src: url('../fonts/PTSans-Regular.ttf');
+   font-weight: 300;
+   font-style: normal;
+ }
+
 :root {
+  /**Custom Fonts **/
+  --ion-font-family: 'PT Sans' , Helvetica, Sans serif;
   /** primary **/
   --ion-color-primary: #000000;
   --ion-color-primary-rgb: 0,0,0;

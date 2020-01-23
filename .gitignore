@@ -1,4 +1,4 @@
-node_modules
+
 
 # profiling files
 chrome-profiler-events.json
@@ -35,3 +35,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
+
+node_modules
