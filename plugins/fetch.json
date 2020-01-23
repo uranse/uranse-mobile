@@ -56,5 +56,15 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "cordova-plugin-firebase-authentication": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebase-authentication@latest"
+    },
+    "is_top_level": true,
+    "variables": {
+      "FIREBASE_AUTH_VERSION": "FIREBASE_AUTH_VERSION"
+    }
   }
 }

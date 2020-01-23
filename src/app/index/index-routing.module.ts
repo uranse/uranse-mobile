@@ -22,6 +22,13 @@ const routes: Routes = [
             m => m.LoginPageModule
           )
       },
+      {
+        path: 'authenticate',
+        loadChildren: () => 
+          import('../pages/authentication/authentication.module').then(
+            m => m.AuthenticationPageModule
+          )
+      },
     ]
   }
 ];
