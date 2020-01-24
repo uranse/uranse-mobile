@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./navtab/navtab.module').then( m => m.NavtabPageModule)
   },
   {
-    path: 'index',
+    path: '',
     loadChildren: () => import('./index/index.module').then( m => m.IndexPageModule)
   }
 
