@@ -1,0 +1,264 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:1-13:12
+MERGED from [:CordovaLib] C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:1-27:12
+MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-19.0.0.aar\d75e925035b237a61ce0c50f8b70b478\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\6a5896c32c58443a31a3db6de5e85d34\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\82fabe3b163fe153b9a2aea8a974c32a\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\dea47e59ffb14cb356364a9607738a08\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\df199263f969fd86d4362a1f88ecee28\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\041985eacf20c23256601779b10b0331\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ad84288124d04e454b000398d3fdb5d2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\9be8f44aeb0360510f7bedd16cab2caa\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\0eab212b85dd15c2e6d0af115b8be582\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\20643b9e648e04c7351bca9709fcb02f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\712f976bd6582943ee4dc7c47b184f96\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\7185fb236a14f00609739d559fe9ad1d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\c130787d6886474058b29cb8ccee28aa\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\8eb4ae62b90731f978cde5a2b11bd7fd\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\11431c8e7a026af5e613fbbab4931749\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\c0e8dc710291fbaacf3e748fe7536129\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-components-16.0.0.aar\ca19f25a26a8913533e7c7bd49cfedae\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\42dd51547de0be08218b8c9789551efa\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\b0ae9f4425dc2f79c547cb75c53c864d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\6c38c7236303e5e013a198728d53bcc1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\404e0b3f51134cb862a60fdef77cb0a3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\a01b2f81985c5f8e34b84ff5d5565958\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\717c3caef429aa63317fccd81fe9c7a1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\e4e15566a069bfa04d738e8ead315501\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\ebf60c0b4e5e9b6020b028af74801bae\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\243685c5a52391a995049c8024a86d60\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:1-13:12
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:1-13:12
+	package
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:98-128
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:70-97
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+	android:hardwareAccelerated
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:11-45
+	xmlns:android
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:129-187
+	android:versionCode
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:2:46-69
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+supports-screens
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:3:5-191
+	android:largeScreens
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:3:49-76
+	android:smallScreens
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:3:132-159
+	android:normalScreens
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:3:77-105
+	android:xlargeScreens
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:3:160-188
+	android:resizeable
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:3:106-131
+	android:anyDensity
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:3:23-48
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
+application
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-19.0.0.aar\d75e925035b237a61ce0c50f8b70b478\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-19.0.0.aar\d75e925035b237a61ce0c50f8b70b478\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\6a5896c32c58443a31a3db6de5e85d34\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\6a5896c32c58443a31a3db6de5e85d34\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\8eb4ae62b90731f978cde5a2b11bd7fd\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\8eb4ae62b90731f978cde5a2b11bd7fd\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\11431c8e7a026af5e613fbbab4931749\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\11431c8e7a026af5e613fbbab4931749\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\8eb4ae62b90731f978cde5a2b11bd7fd\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:5:182-208
+	android:label
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:5:88-120
+	android:hardwareAccelerated
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:5:18-52
+	android:icon
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:5:53-87
+	android:networkSecurityConfig
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:5:121-181
+activity#volumtech.uranse.app.MainActivity
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:6:9-11:20
+	android:label
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:6:136-173
+	android:launchMode
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:6:174-204
+	android:windowSoftInputMode
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:6:296-338
+	android:configChanges
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:6:19-135
+	android:theme
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:6:233-295
+	android:name
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:6:205-232
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:7:13-10:29
+	android:label
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:7:28-65
+action#android.intent.action.MAIN
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:8:17-69
+	android:name
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:8:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:9:17-77
+	android:name
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
+uses-sdk
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+MERGED from [:CordovaLib] C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
+MERGED from [:CordovaLib] C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\CordovaLib\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-44
+MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-19.0.0.aar\d75e925035b237a61ce0c50f8b70b478\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-interop-19.0.0.aar\d75e925035b237a61ce0c50f8b70b478\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\6a5896c32c58443a31a3db6de5e85d34\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-tasks-17.0.0.aar\6a5896c32c58443a31a3db6de5e85d34\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\82fabe3b163fe153b9a2aea8a974c32a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\fragment-1.0.0.aar\82fabe3b163fe153b9a2aea8a974c32a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\dea47e59ffb14cb356364a9607738a08\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\dea47e59ffb14cb356364a9607738a08\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\df199263f969fd86d4362a1f88ecee28\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\df199263f969fd86d4362a1f88ecee28\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\041985eacf20c23256601779b10b0331\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\041985eacf20c23256601779b10b0331\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ad84288124d04e454b000398d3fdb5d2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ad84288124d04e454b000398d3fdb5d2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\9be8f44aeb0360510f7bedd16cab2caa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\9be8f44aeb0360510f7bedd16cab2caa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\0eab212b85dd15c2e6d0af115b8be582\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\0eab212b85dd15c2e6d0af115b8be582\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\20643b9e648e04c7351bca9709fcb02f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\20643b9e648e04c7351bca9709fcb02f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\712f976bd6582943ee4dc7c47b184f96\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\712f976bd6582943ee4dc7c47b184f96\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\7185fb236a14f00609739d559fe9ad1d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\7185fb236a14f00609739d559fe9ad1d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\c130787d6886474058b29cb8ccee28aa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\c130787d6886474058b29cb8ccee28aa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\8eb4ae62b90731f978cde5a2b11bd7fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-1.0.0.aar\8eb4ae62b90731f978cde5a2b11bd7fd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\11431c8e7a026af5e613fbbab4931749\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\11431c8e7a026af5e613fbbab4931749\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\c0e8dc710291fbaacf3e748fe7536129\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\c0e8dc710291fbaacf3e748fe7536129\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-components-16.0.0.aar\ca19f25a26a8913533e7c7bd49cfedae\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-components-16.0.0.aar\ca19f25a26a8913533e7c7bd49cfedae\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\42dd51547de0be08218b8c9789551efa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.0.0.aar\42dd51547de0be08218b8c9789551efa\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\b0ae9f4425dc2f79c547cb75c53c864d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\b0ae9f4425dc2f79c547cb75c53c864d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\6c38c7236303e5e013a198728d53bcc1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\6c38c7236303e5e013a198728d53bcc1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\404e0b3f51134cb862a60fdef77cb0a3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\404e0b3f51134cb862a60fdef77cb0a3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\a01b2f81985c5f8e34b84ff5d5565958\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\a01b2f81985c5f8e34b84ff5d5565958\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\717c3caef429aa63317fccd81fe9c7a1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\717c3caef429aa63317fccd81fe9c7a1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\e4e15566a069bfa04d738e8ead315501\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\e4e15566a069bfa04d738e8ead315501\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\ebf60c0b4e5e9b6020b028af74801bae\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\ebf60c0b4e5e9b6020b028af74801bae\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\243685c5a52391a995049c8024a86d60\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\243685c5a52391a995049c8024a86d60\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\vadeyemi\Documents\goavince\uranse-mobile\platforms\android\app\src\main\AndroidManifest.xml
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:25:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:35:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:34:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-auth-19.2.0.aar\bd51412dd3ef942a259d30bec9643999\AndroidManifest.xml:37:17-109
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-base-17.1.0.aar\0d0072670ad5d04034504d710e7c1086\AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\firebase-common-19.3.0.aar\9f7759cd00536f5484179aaffc89ab7a\AndroidManifest.xml:27:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\vadeyemi\.gradle\caches\transforms-1\files-1.1\play-services-basement-17.0.0.aar\1b19e881ff5977194a8399971e648e7d\AndroidManifest.xml:24:13-58

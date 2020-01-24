@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c274b73c-0c90-4365-b451-bd5f5ef5f968" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/0-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/0-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/0-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/0-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/10-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/10-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/10-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/10-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/11-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/11-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/11-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/11-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/12-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/12-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/12-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/12-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/13-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/13-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/14-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/14-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/15-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/15-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/15-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/15-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/16-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/16-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/16-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/16-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/17-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/17-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/17-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/17-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/18-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/18-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/18-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/18-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/19-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/19-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/19-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/19-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/20-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/20-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/20-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/20-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/21-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/21-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/24-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/24-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/24-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/24-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/25-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/25-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/25-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/25-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/26-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/26-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/26-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/26-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/27-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/27-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/27-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/27-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/28-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/28-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/28-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/28-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/29-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/29-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/29-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/29-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/30-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/30-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/30-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/30-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/31-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/31-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/31-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/31-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/32-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/32-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/32-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/32-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/33-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/33-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/33-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/33-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/34-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/34-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/34-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/34-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/37-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/37-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/38-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/38-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/44-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/44-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/44-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/44-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/45-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/45-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/45-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/45-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/46-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/46-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/46-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/46-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/47-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/47-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/47-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/47-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/48-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/48-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/48-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/48-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/49-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/49-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/49-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/49-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/50-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/50-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/50-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/50-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/51-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/51-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/51-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/51-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/52-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/52-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/52-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/52-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/53-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/53-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/53-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/53-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/54-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/54-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/54-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/54-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/55-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/55-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/56-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/56-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/56-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/56-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/57-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/57-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/57-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/57-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/58-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/58-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/58-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/58-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/59-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/59-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/59-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/59-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/60-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/60-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/60-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/60-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/61-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/61-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/61-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/61-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/62-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/62-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/62-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/62-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/63-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/63-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/63-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/63-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/64-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/64-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/65-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/65-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/65-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/65-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/66-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/66-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/66-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/66-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/67-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/67-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/67-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/67-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/68-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/68-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/68-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/68-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/69-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/69-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/69-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/69-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/7-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/7-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/7-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/7-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/70-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/70-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/70-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/70-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/71-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/71-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/71-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/71-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/72-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/72-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/72-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/72-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/75-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/75-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/75-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/75-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/76-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/76-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/76-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/76-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/77-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/77-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/8-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/8-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/8-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/8-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/9-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/9-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/9-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/9-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/assets/shapes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/assets/shapes.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/cordova-js-src/.eslintrc.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/cordova-js-src/plugin/ios/console.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/cordova-js-src/plugin/ios/logger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/cordova.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/core-js-js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/core-js-js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/core-js-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/core-js-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/css-shim-206ea950-3169f23e-js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/css-shim-206ea950-3169f23e-js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/css-shim-206ea950-3169f23e-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/css-shim-206ea950-3169f23e-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/dom-96781eef-a2fb04dd-js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/dom-96781eef-a2fb04dd-js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/dom-96781eef-a2fb04dd-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/dom-96781eef-a2fb04dd-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/dom-js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/dom-js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/dom-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/dom-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/focus-visible-70713a0c-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/focus-visible-70713a0c-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/hardware-back-button-5afe3cb0-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/hardware-back-button-5afe3cb0-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/input-shims-a4fc53ac-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/input-shims-a4fc53ac-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/ios-transition-504cdd09-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/ios-transition-504cdd09-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/md-transition-fea2bbfb-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/md-transition-fea2bbfb-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/navtab-navtab-module-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/plugins/cordova-plugin-android-permissions/www/permissions-dummy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/plugins/cordova-plugin-ionic-keyboard/www/ios/keyboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/polyfills-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/polyfills-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/runtime-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/shadow-css-4889ae62-23996f3f-js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/shadow-css-4889ae62-23996f3f-js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/shadow-css-4889ae62-23996f3f-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/shadow-css-4889ae62-23996f3f-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/status-tap-32c72c43-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/status-tap-32c72c43-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/styles-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/styles-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/styles-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/styles-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/styles-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/styles-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/swiper-bundle-ccdaac54-js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/swiper-bundle-ccdaac54-js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/swiper-bundle-ccdaac54-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/swiper-bundle-ccdaac54-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/tap-click-ca00ce7f-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/assets/www/tap-click-ca00ce7f-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/assets/www/wk-plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/components/start-button/start-button.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/components/start-button/start-button.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/guards/home.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/guards/home.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/guards/index.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/guards/index.guard.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/index/index-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/index/index-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/navtab/navtab-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/navtab/navtab-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/pages/authentication/authentication.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/pages/authentication/authentication.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/pages/authentication/authentication.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/pages/authentication/authentication.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../src/app/pages/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../src/app/pages/login/login.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/index-index-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/index-index-module-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/index-index-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/index-index-module-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/index-index-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/index-index-module-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/index-index-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/index-index-module-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/navtab-navtab-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/navtab-navtab-module-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/navtab-navtab-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/navtab-navtab-module-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/navtab-navtab-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/navtab-navtab-module-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/navtab-navtab-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/navtab-navtab-module-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-authentication-authentication-module-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-login-login-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-login-login-module-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-login-login-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-login-login-module-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-login-login-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-login-login-module-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-login-login-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-login-login-module-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/pages-welcome-welcome-module-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/runtime-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/runtime-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/runtime-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/runtime-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/runtime-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/runtime-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../www/runtime-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../www/runtime-es5.js.map" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_XL_API_29" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
+        <option value="$PROJECT_DIR$/app/app.iml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="521" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_XL_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-01-24T03:10:16.199Z" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c274b73c-0c90-4365-b451-bd5f5ef5f968" name="Default Changelist" comment="" />
+      <created>1579830577527</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579830577527</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info id="Captures" order="0" sideWeight="0.502008" side_tool="true" weight="0.218509" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49799198" visible="true" weight="0.27530363" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Find" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32974428" />
+      <window_info anchor="bottom" id="Logcat" order="1" weight="0.3285968" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.3285968" />
+      <window_info anchor="bottom" id="Debug" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.3285968" />
+      <window_info active="true" anchor="bottom" id="Android Profiler" order="8" visible="true" weight="0.43516874" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" visible="true" weight="0.19919029" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/android.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2994" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-566">
+          <folding>
+            <element signature="e#0#799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

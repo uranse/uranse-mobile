@@ -1,0 +1,1 @@
+{"plugins":["cordova-plugin-ionic-webview","cordova-plugin-ionic-keyboard","cordova-plugin-statusbar","cordova-plugin-device","cordova-plugin-splashscreen","cordova-plugin-android-permissions","cordova-plugin-firebase-authentication","cordova-plugin-actionsheet","cordova-support-android-plugin","cordova-support-google-services","cordova-plugin-whitelist"]}
