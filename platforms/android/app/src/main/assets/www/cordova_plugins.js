@@ -47,15 +47,35 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugins.permissions"
       ]
+    },
+    {
+      "id": "cordova-plugin-actionsheet.ActionSheet",
+      "file": "plugins/cordova-plugin-actionsheet/www/ActionSheet.js",
+      "pluginId": "cordova-plugin-actionsheet",
+      "clobbers": [
+        "window.plugins.actionsheet"
+      ]
+    },
+    {
+      "id": "cordova-plugin-firebase-authentication.FirebaseAuthentication",
+      "file": "plugins/cordova-plugin-firebase-authentication/www/FirebaseAuthentication.js",
+      "pluginId": "cordova-plugin-firebase-authentication",
+      "merges": [
+        "cordova.plugins.firebase.auth"
+      ]
     }
   ];
   module.exports.metadata = {
-    "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-ionic-webview": "4.1.3",
     "cordova-plugin-ionic-keyboard": "2.2.0",
     "cordova-plugin-statusbar": "2.4.3",
     "cordova-plugin-device": "2.0.3",
     "cordova-plugin-splashscreen": "5.0.3",
-    "cordova-plugin-android-permissions": "1.0.2"
+    "cordova-plugin-android-permissions": "1.0.2",
+    "cordova-plugin-actionsheet": "2.3.3",
+    "cordova-support-android-plugin": "1.0.1",
+    "cordova-support-google-services": "1.3.2",
+    "cordova-plugin-firebase-authentication": "3.0.2",
+    "cordova-plugin-whitelist": "1.3.4"
   };
 });

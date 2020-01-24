@@ -24,6 +24,8 @@
 		B5C725C64CD5479EA22ED1D5 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = F6966B029BA149B98B45E9F4 /* CDVSplashScreen.m */; };
 		F42B4D9CF16345E599F09BD0 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 815AD0CC53D84433B7E7CDAD /* CDVViewController+SplashScreen.m */; };
 		7300C54A45D347498B2A0E3E /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA8A313C7F246D78F53AA00 /* CDVStatusBar.m */; };
+		E58EBE3F0BD74653BEEA4AA7 /* ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3213E0D3DC41F9BC493760 /* ActionSheet.m */; };
+		19FB7B4ECA4840178D461BE7 /* FirebaseAuthenticationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = FE456C4B6A7447F8B1F1FA28 /* FirebaseAuthenticationPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,10 @@
 		6A75EB1281AF4D6BB55649BC /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		CCA8A313C7F246D78F53AA00 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		73C0A4D37DF24C428D4EA9B8 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		0B3213E0D3DC41F9BC493760 /* ActionSheet.m */ = {isa = PBXFileReference; name = "ActionSheet.m"; path = "cordova-plugin-actionsheet/ActionSheet.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		888DEFCFEDC042F493AEC12C /* ActionSheet.h */ = {isa = PBXFileReference; name = "ActionSheet.h"; path = "cordova-plugin-actionsheet/ActionSheet.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		FE456C4B6A7447F8B1F1FA28 /* FirebaseAuthenticationPlugin.m */ = {isa = PBXFileReference; name = "FirebaseAuthenticationPlugin.m"; path = "cordova-plugin-firebase-authentication/FirebaseAuthenticationPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		6EB39D8B5A50426FAB948426 /* FirebaseAuthenticationPlugin.h */ = {isa = PBXFileReference; name = "FirebaseAuthenticationPlugin.h"; path = "cordova-plugin-firebase-authentication/FirebaseAuthenticationPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +220,10 @@
 				6A75EB1281AF4D6BB55649BC /* CDVViewController+SplashScreen.h */,
 				CCA8A313C7F246D78F53AA00 /* CDVStatusBar.m */,
 				73C0A4D37DF24C428D4EA9B8 /* CDVStatusBar.h */,
+				0B3213E0D3DC41F9BC493760 /* ActionSheet.m */,
+				888DEFCFEDC042F493AEC12C /* ActionSheet.h */,
+				FE456C4B6A7447F8B1F1FA28 /* FirebaseAuthenticationPlugin.m */,
+				6EB39D8B5A50426FAB948426 /* FirebaseAuthenticationPlugin.h */,
 			);
 			name = Plugins;
 			path = "URANSE-MOBILE/Plugins";
@@ -347,6 +357,8 @@
 				B5C725C64CD5479EA22ED1D5 /* CDVSplashScreen.m in Sources */,
 				F42B4D9CF16345E599F09BD0 /* CDVViewController+SplashScreen.m in Sources */,
 				7300C54A45D347498B2A0E3E /* CDVStatusBar.m in Sources */,
+				E58EBE3F0BD74653BEEA4AA7 /* ActionSheet.m in Sources */,
+				19FB7B4ECA4840178D461BE7 /* FirebaseAuthenticationPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

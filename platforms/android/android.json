@@ -28,10 +28,6 @@
         "parents": {
           "/*": [
             {
-              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-              "count": 1
-            },
-            {
               "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             },
@@ -45,6 +41,18 @@
             },
             {
               "xml": "<feature name=\"Permissions\"><param name=\"android-package\" value=\"com.android.plugins.Permissions\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"ActionSheet\"><param name=\"android-package\" value=\"nl.xservices.plugins.actionsheet.ActionSheet\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"FirebaseAuthentication\"><param name=\"android-package\" value=\"by.chemerisuk.cordova.firebase.FirebaseAuthenticationPlugin\" /><param name=\"onload\" value=\"false\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             }
           ]
@@ -83,9 +91,6 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "volumtech.uranse.app"
-    },
     "cordova-plugin-ionic-webview": {
       "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
       "PACKAGE_NAME": "volumtech.uranse.app"
@@ -103,6 +108,22 @@
       "PACKAGE_NAME": "volumtech.uranse.app"
     },
     "cordova-plugin-android-permissions": {
+      "PACKAGE_NAME": "volumtech.uranse.app"
+    },
+    "cordova-plugin-actionsheet": {
+      "PACKAGE_NAME": "volumtech.uranse.app"
+    },
+    "cordova-support-android-plugin": {
+      "PACKAGE_NAME": "volumtech.uranse.app"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "volumtech.uranse.app"
+    },
+    "cordova-plugin-firebase-authentication": {
+      "FIREBASE_AUTH_VERSION": "19.2.0",
+      "PACKAGE_NAME": "volumtech.uranse.app"
+    },
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "volumtech.uranse.app"
     }
   },
@@ -155,15 +176,35 @@
       "clobbers": [
         "cordova.plugins.permissions"
       ]
+    },
+    {
+      "id": "cordova-plugin-actionsheet.ActionSheet",
+      "file": "plugins/cordova-plugin-actionsheet/www/ActionSheet.js",
+      "pluginId": "cordova-plugin-actionsheet",
+      "clobbers": [
+        "window.plugins.actionsheet"
+      ]
+    },
+    {
+      "id": "cordova-plugin-firebase-authentication.FirebaseAuthentication",
+      "file": "plugins/cordova-plugin-firebase-authentication/www/FirebaseAuthentication.js",
+      "pluginId": "cordova-plugin-firebase-authentication",
+      "merges": [
+        "cordova.plugins.firebase.auth"
+      ]
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-ionic-webview": "4.1.3",
     "cordova-plugin-ionic-keyboard": "2.2.0",
     "cordova-plugin-statusbar": "2.4.3",
     "cordova-plugin-device": "2.0.3",
     "cordova-plugin-splashscreen": "5.0.3",
-    "cordova-plugin-android-permissions": "1.0.2"
+    "cordova-plugin-android-permissions": "1.0.2",
+    "cordova-plugin-actionsheet": "2.3.3",
+    "cordova-support-android-plugin": "1.0.1",
+    "cordova-support-google-services": "1.3.2",
+    "cordova-plugin-firebase-authentication": "3.0.2",
+    "cordova-plugin-whitelist": "1.3.4"
   }
 }
