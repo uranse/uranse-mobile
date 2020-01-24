@@ -694,11 +694,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
-        path: '',
+        path: 'home',
         loadChildren: () => __webpack_require__.e(/*! import() | navtab-navtab-module */ "navtab-navtab-module").then(__webpack_require__.bind(null, /*! ./navtab/navtab.module */ "./src/app/navtab/navtab.module.ts")).then(m => m.NavtabPageModule)
     },
     {
-        path: 'index',
+        path: '',
         loadChildren: () => __webpack_require__.e(/*! import() | index-index-module */ "index-index-module").then(__webpack_require__.bind(null, /*! ./index/index.module */ "./src/app/index/index.module.ts")).then(m => m.IndexPageModule)
     }
 ];

@@ -72,6 +72,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var routes = [{
       path: '',
       component: _index_page__WEBPACK_IMPORTED_MODULE_3__["IndexPage"],
+      //canActivate: [IndexGuard],
       children: [{
         path: '',
         loadChildren: function loadChildren() {
@@ -103,6 +104,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           /*! ../pages/authentication/authentication.module */
           "./src/app/pages/authentication/authentication.module.ts")).then(function (m) {
             return m.AuthenticationPageModule;
+          });
+        }
+      }, {
+        path: 'verification',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() | pages-verification-verification-module */
+          "pages-verification-verification-module").then(__webpack_require__.bind(null,
+          /*! ../pages/verification/verification.module */
+          "./src/app/pages/verification/verification.module.ts")).then(function (m) {
+            return m.VerificationPageModule;
           });
         }
       }]

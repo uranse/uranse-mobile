@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-button expand=\"block\" color=\"light\" (click)=\"navigateToLogin()\">Start</ion-button>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-button expand=\"block\" color=\"light\" (click)=\"navigateToLogin()\" strong>Start</ion-button>");
 
 /***/ }),
 

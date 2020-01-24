@@ -71,7 +71,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var routes = [{
       path: '',
-      component: _navtab_page__WEBPACK_IMPORTED_MODULE_3__["NavtabPage"]
+      component: _navtab_page__WEBPACK_IMPORTED_MODULE_3__["NavtabPage"] // canActivate: [HomeGuard],
+
     }];
 
     var NavtabPageRoutingModule = function NavtabPageRoutingModule() {

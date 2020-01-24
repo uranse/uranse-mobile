@@ -778,6 +778,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return m.NavtabPageModule;
         });
       }
+    }, {
+      path: 'index',
+      loadChildren: function loadChildren() {
+        return __webpack_require__.e(
+        /*! import() | index-index-module */
+        "index-index-module").then(__webpack_require__.bind(null,
+        /*! ./index/index.module */
+        "./src/app/index/index.module.ts")).then(function (m) {
+          return m.IndexPageModule;
+        });
+      }
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -1113,7 +1124,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! /Users/ugp/Documents/uranse-mobile/src/main.ts */
+    /*! C:\Users\vadeyemi\Documents\goavince\uranse-mobile\src\main.ts */
     "./src/main.ts");
     /***/
   }

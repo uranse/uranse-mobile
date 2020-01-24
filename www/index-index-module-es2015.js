@@ -35,6 +35,7 @@ const routes = [
     {
         path: '',
         component: _index_page__WEBPACK_IMPORTED_MODULE_3__["IndexPage"],
+        //canActivate: [IndexGuard],
         children: [
             {
                 path: '',
@@ -47,6 +48,10 @@ const routes = [
             {
                 path: 'authenticate',
                 loadChildren: () => __webpack_require__.e(/*! import() | pages-authentication-authentication-module */ "pages-authentication-authentication-module").then(__webpack_require__.bind(null, /*! ../pages/authentication/authentication.module */ "./src/app/pages/authentication/authentication.module.ts")).then(m => m.AuthenticationPageModule)
+            },
+            {
+                path: 'verification',
+                loadChildren: () => __webpack_require__.e(/*! import() | pages-verification-verification-module */ "pages-verification-verification-module").then(__webpack_require__.bind(null, /*! ../pages/verification/verification.module */ "./src/app/pages/verification/verification.module.ts")).then(m => m.VerificationPageModule)
             },
         ]
     }

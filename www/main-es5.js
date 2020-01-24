@@ -768,7 +768,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./node_modules/@angular/router/fesm2015/router.js");
 
     var routes = [{
-      path: '',
+      path: 'home',
       loadChildren: function loadChildren() {
         return __webpack_require__.e(
         /*! import() | navtab-navtab-module */
@@ -779,7 +779,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         });
       }
     }, {
-      path: 'index',
+      path: '',
       loadChildren: function loadChildren() {
         return __webpack_require__.e(
         /*! import() | index-index-module */

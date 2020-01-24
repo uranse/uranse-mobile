@@ -41,7 +41,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-button expand=\"block\" color=\"light\" (click)=\"navigateToLogin()\">Start</ion-button>";
+    __webpack_exports__["default"] = "<ion-button expand=\"block\" color=\"light\" (click)=\"navigateToLogin()\" strong>Start</ion-button>";
     /***/
   },
 

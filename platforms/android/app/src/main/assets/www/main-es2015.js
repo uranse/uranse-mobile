@@ -696,6 +696,10 @@ const routes = [
     {
         path: '',
         loadChildren: () => __webpack_require__.e(/*! import() | navtab-navtab-module */ "navtab-navtab-module").then(__webpack_require__.bind(null, /*! ./navtab/navtab.module */ "./src/app/navtab/navtab.module.ts")).then(m => m.NavtabPageModule)
+    },
+    {
+        path: 'index',
+        loadChildren: () => __webpack_require__.e(/*! import() | index-index-module */ "index-index-module").then(__webpack_require__.bind(null, /*! ./index/index.module */ "./src/app/index/index.module.ts")).then(m => m.IndexPageModule)
     }
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -893,7 +897,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ugp/Documents/uranse-mobile/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\vadeyemi\Documents\goavince\uranse-mobile\src\main.ts */"./src/main.ts");
 
 
 /***/ })

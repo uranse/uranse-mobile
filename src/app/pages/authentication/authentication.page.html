@@ -4,28 +4,17 @@
   </ion-nav-push>
 
   <div class="divmargin ion-padding">
-    <img
-      src="/assets/images/black-whit-bkgrd.png"
-      alt="Uranse"
-      class="ion-padding"
-    />
+    <img src="/assets/images/black-whit-bkgrd.png" alt="Uranse" class="ion-padding" />
     <h3>Get your one-time code</h3>
   </div>
   <div class="ion-padding">
-        <ion-input class="ion-padding" placeholder="Phone Number" type="tel"
-          autocomplete="on" autocorrect="off" inputmode="tel" minlength=10
-        >
-
-        </ion-input>
-   
-    <ion-button
-      expand="full"
-      color="primary"
-      size="small"
-      strong
-    >
-      Continue
-    </ion-button>
+    <form>
+      <ion-input name="phonenumber" class="ion-padding" placeholder="Phone Number" type="tel" autocomplete="on" autocorrect="off"
+        inputmode="tel" minlength=10 [(ngModel)] = "phonenumber"></ion-input>
+      <ion-button expand="block" color="primary" size="big" strong (click) = "verifyPhoneNumber()">
+        Continue
+      </ion-button>
+    </form>
   </div>
 </ion-content>
 <ion-footer>

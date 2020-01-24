@@ -35,6 +35,7 @@ const routes = [
     {
         path: '',
         component: _navtab_page__WEBPACK_IMPORTED_MODULE_3__["NavtabPage"]
+        // canActivate: [HomeGuard],
     }
 ];
 let NavtabPageRoutingModule = class NavtabPageRoutingModule {
