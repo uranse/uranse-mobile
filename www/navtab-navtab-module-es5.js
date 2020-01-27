@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\">\r\n    <ion-tab-button tab=\"track\">\r\n      <ion-icon name=\"search\"></ion-icon>\r\n      <ion-label>TRACK</ion-label>\r\n    </ion-tab-button>\r\n\r\n  <ion-tab-button tab=\"ship\">\r\n      <ion-icon name=\"cube\"></ion-icon>\r\n      <ion-label>SHIP</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"rates\">\r\n      <ion-icon name=\"calculator\"></ion-icon>\r\n      <ion-label>RATE</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"settings\">\r\n      <ion-icon name=\"settings\"></ion-icon>\r\n      <ion-label>SETTINGS</ion-label>\r\n    </ion-tab-button>\r\n  </ion-tab-bar>\r\n</ion-tabs>";
+    __webpack_exports__["default"] = "<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n    <ion-tab-button tab=\"track\">\r\n      <ion-icon name=\"search\" color=\"light\"></ion-icon>\r\n      <ion-label>TRACK</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"ship\">\r\n      <ion-icon name=\"cube\" color=\"light\"></ion-icon>\r\n      <ion-label>SHIP</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"rates\">\r\n      <ion-icon name=\"calculator\" color=\"light\"></ion-icon>\r\n      <ion-label>RATE</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"settings\">\r\n      <ion-icon name=\"settings\" color=\"light\"></ion-icon>\r\n      <ion-label>SETTINGS</ion-label>\r\n    </ion-tab-button>\r\n  </ion-tab-bar>\r\n</ion-tabs>\r\n";
     /***/
   },
 

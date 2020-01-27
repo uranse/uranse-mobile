@@ -1,7 +1,8 @@
 {
   "name": "URANSE-MOBILE",
   "integrations": {
-    "cordova": {}
+    "cordova": {},
+    "capacitor": {}
   },
   "type": "angular",
   "id": "93bb0d2d"

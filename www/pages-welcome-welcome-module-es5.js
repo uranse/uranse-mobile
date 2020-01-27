@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "  \n<ion-slides pager=\"true\" [options]=\"slideOpts\">\n  <ion-slide>\n    <img src=\"/assets/images/welcometouranse.png\" />\n    <h3>The Messenger</h3>\n  </ion-slide>\n</ion-slides>";
+    __webpack_exports__["default"] = "  \r\n<ion-slides pager=\"true\" [options]=\"slideOpts\">\r\n  <ion-slide>\r\n    <img src=\"/assets/images/welcometouranse.png\" />\r\n    <h3>The Messenger</h3>\r\n  </ion-slide>\r\n</ion-slides>";
     /***/
   },
 
@@ -61,7 +61,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content padding=\"true\" color=\"primary\">\n  <app-slides></app-slides>\n  <app-start-button></app-start-button>\n</ion-content>\n";
+    __webpack_exports__["default"] = "<ion-content padding=\"true\" color=\"primary\">\r\n  <app-slides></app-slides>\r\n  <app-start-button></app-start-button>\r\n</ion-content>\r\n";
     /***/
   },
 
