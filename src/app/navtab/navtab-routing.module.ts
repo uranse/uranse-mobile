@@ -6,9 +6,9 @@ import { NavtabPage } from './navtab.page';
 
 const routes: Routes = [
   {
-    path: '',
-    component: NavtabPage
-   // canActivate: [HomeGuard],
+    path: 'home',
+    component: NavtabPage,
+    canActivate: [HomeGuard],
 
   }
 ];
