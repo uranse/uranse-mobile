@@ -61,4 +61,11 @@ export class StorageService {
     await Storage.remove({key: storageKey});
   }
 
+  async setIsNotNewUser() {
+    await Storage.set({
+      key: 'not_new_user',
+      value: 'true'
+    });
+  }
+
 }

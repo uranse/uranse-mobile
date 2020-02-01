@@ -16,6 +16,7 @@ export class AuthService {
 
   login() {
     this.storageService.setIsLoggedIn();
+    this.storageService.setIsNotNewUser();
   }
   logout() {
     this.storageService.removeItem('isloggedin');

@@ -1,3 +1,4 @@
+import { WelcomeGuard } from './../guards/welcome.guard';
 import { IndexGuard } from './../guards/index.guard';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -11,6 +12,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        canActivate: [WelcomeGuard],
         loadChildren: () => 
           import('../pages/welcome/welcome.module').then(
             m => m.WelcomePageModule
