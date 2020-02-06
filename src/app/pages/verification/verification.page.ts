@@ -1,3 +1,4 @@
+import { AlertService } from './../../services/alert.service';
 import { ToastService } from './../../services/toast.service';
 import { StorageService } from './../../services/storage.service';
 import { AuthService } from './../../services/auth.service';
@@ -16,7 +17,8 @@ export class VerificationPage implements OnInit {
     private router: Router,
     private toastService: ToastService,
     private authService: AuthService,
-    private storageService: StorageService
+    private storageService: StorageService,
+    private alertService: AlertService
   ) { }
 
   ngOnInit() {

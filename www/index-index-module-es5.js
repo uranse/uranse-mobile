@@ -1,8 +1,8 @@
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["index-index-module"], {
   /***/
@@ -22,6 +22,202 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 
     __webpack_exports__["default"] = "<ion-content>\r\n   <ion-router-outlet></ion-router-outlet>\r\n</ion-content>\r\n";
+    /***/
+  },
+
+  /***/
+  "./src/app/guards/index.guard.ts":
+  /*!***************************************!*\
+    !*** ./src/app/guards/index.guard.ts ***!
+    \***************************************/
+
+  /*! exports provided: IndexGuard */
+
+  /***/
+  function srcAppGuardsIndexGuardTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "IndexGuard", function () {
+      return IndexGuard;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _config_auth_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./../config/auth-constants */
+    "./src/app/config/auth-constants.ts");
+    /* harmony import */
+
+
+    var _services_storage_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./../services/storage.service */
+    "./src/app/services/storage.service.ts");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var IndexGuard =
+    /*#__PURE__*/
+    function () {
+      function IndexGuard(storageService, router) {
+        _classCallCheck(this, IndexGuard);
+
+        this.storageService = storageService;
+        this.router = router;
+      }
+
+      _createClass(IndexGuard, [{
+        key: "canActivate",
+        value: function canActivate() {
+          var _this = this;
+
+          return new Promise(function (resolve) {
+            _this.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(function (res) {
+              if (res) {
+                _this.router.navigate(['home']);
+
+                resolve(false);
+              } else {
+                resolve(true);
+              }
+            }).catch(function (err) {
+              resolve(false);
+            });
+          });
+        }
+      }]);
+
+      return IndexGuard;
+    }();
+
+    IndexGuard.ctorParameters = function () {
+      return [{
+        type: _services_storage_service__WEBPACK_IMPORTED_MODULE_2__["StorageService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }];
+    };
+
+    IndexGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Injectable"])({
+      providedIn: 'root'
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_storage_service__WEBPACK_IMPORTED_MODULE_2__["StorageService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])], IndexGuard);
+    /***/
+  },
+
+  /***/
+  "./src/app/guards/welcome.guard.ts":
+  /*!*****************************************!*\
+    !*** ./src/app/guards/welcome.guard.ts ***!
+    \*****************************************/
+
+  /*! exports provided: WelcomeGuard */
+
+  /***/
+  function srcAppGuardsWelcomeGuardTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "WelcomeGuard", function () {
+      return WelcomeGuard;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _config_auth_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./../config/auth-constants */
+    "./src/app/config/auth-constants.ts");
+    /* harmony import */
+
+
+    var _services_storage_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./../services/storage.service */
+    "./src/app/services/storage.service.ts");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var WelcomeGuard =
+    /*#__PURE__*/
+    function () {
+      function WelcomeGuard(storageService, router) {
+        _classCallCheck(this, WelcomeGuard);
+
+        this.storageService = storageService;
+        this.router = router;
+      }
+
+      _createClass(WelcomeGuard, [{
+        key: "canActivate",
+        value: function canActivate() {
+          var _this2 = this;
+
+          return new Promise(function (resolve) {
+            _this2.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].notNewUserKey).then(function (res) {
+              if (res) {
+                _this2.router.navigate(['login']);
+
+                resolve(false);
+              } else {
+                resolve(true);
+              }
+            }).catch(function (err) {
+              resolve(false);
+            });
+          });
+        }
+      }]);
+
+      return WelcomeGuard;
+    }();
+
+    WelcomeGuard.ctorParameters = function () {
+      return [{
+        type: _services_storage_service__WEBPACK_IMPORTED_MODULE_2__["StorageService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }];
+    };
+
+    WelcomeGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Injectable"])({
+      providedIn: 'root'
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_storage_service__WEBPACK_IMPORTED_MODULE_2__["StorageService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])], WelcomeGuard);
     /***/
   },
 
@@ -53,28 +249,41 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _guards_welcome_guard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./../guards/welcome.guard */
+    "./src/app/guards/welcome.guard.ts");
+    /* harmony import */
+
+
+    var _guards_index_guard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./../guards/index.guard */
+    "./src/app/guards/index.guard.ts");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
-    var _index_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _index_page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./index.page */
     "./src/app/index/index.page.ts");
 
     var routes = [{
       path: '',
-      component: _index_page__WEBPACK_IMPORTED_MODULE_3__["IndexPage"],
-      //canActivate: [IndexGuard],
+      component: _index_page__WEBPACK_IMPORTED_MODULE_5__["IndexPage"],
+      canActivate: [_guards_index_guard__WEBPACK_IMPORTED_MODULE_2__["IndexGuard"]],
       children: [{
         path: '',
+        canActivate: [_guards_welcome_guard__WEBPACK_IMPORTED_MODULE_1__["WelcomeGuard"]],
         loadChildren: function loadChildren() {
           return __webpack_require__.e(
           /*! import() | pages-welcome-welcome-module */
@@ -124,9 +333,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _classCallCheck(this, IndexPageRoutingModule);
     };
 
-    IndexPageRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
-      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    IndexPageRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forChild(routes)],
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"]]
     })], IndexPageRoutingModule);
     /***/
   },

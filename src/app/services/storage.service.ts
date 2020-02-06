@@ -48,6 +48,15 @@ export class StorageService {
     });
   }
 
+  async getIsLoggedIn(storageKey: string) {
+    const ret = await Storage.get({ key: storageKey });
+    if (ret.value) {
+     return ret.value;
+    } else {
+      return false;
+    }
+  }
+
   async keys() {
     const keys = await Storage.keys();
     console.log('Got keys: ', keys);

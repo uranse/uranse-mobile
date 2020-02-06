@@ -1,3 +1,4 @@
+import { SHIPPINGPAGEROUTES } from './../../config/routes.config';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shipping.page.scss'],
 })
 export class ShippingPage implements OnInit {
-
-  constructor() { }
-
+  shippingmenus = SHIPPINGPAGEROUTES;
+  constructor() {
+   }
   ngOnInit() {
   }
-
 }

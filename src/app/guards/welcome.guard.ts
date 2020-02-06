@@ -12,7 +12,7 @@ export class WelcomeGuard implements CanActivate  {
   constructor(public storageService: StorageService, public router: Router) { }
     canActivate(): Promise<boolean> {
      return new Promise(resolve => {
-       this.storageService.get(AuthConstants.notNewUserKey).then(res => {
+       this.storageService.getIsLoggedIn(AuthConstants.notNewUserKey).then(res => {
          if (res) {
            this.router.navigate(['login']);
            resolve(false);

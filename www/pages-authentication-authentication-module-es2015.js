@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-content class=\"loginPage\" color=\"light\">\r\n  <ion-nav-push>\r\n    <ion-button color=\"primary\" size=\"small\" fill=\"clear\">SKIP</ion-button>\r\n  </ion-nav-push>\r\n\r\n  <div class=\"divmargin ion-padding\">\r\n    <img src=\"/assets/images/black-whit-bkgrd.png\" alt=\"Uranse\" class=\"ion-padding\" />\r\n    <h3>Get your one-time code</h3>\r\n  </div>\r\n  <div class=\"ion-padding\">\r\n    <form>\r\n      <ion-input name=\"phonenumber\" class=\"ion-padding\" placeholder=\"Phone Number\" type=\"tel\" autocomplete=\"on\" autocorrect=\"off\"\r\n        inputmode=\"tel\" minlength=10 [(ngModel)] = \"phonenumber\"></ion-input>\r\n      <ion-button expand=\"block\" color=\"primary\" size=\"big\" strong (click) = \"verifyPhoneNumber()\">\r\n        Continue\r\n      </ion-button>\r\n    </form>\r\n  </div>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"primary\">\r\n    <p class=\"ion-padding\">\r\n      By signing in you accept our\r\n      <a>Terms of use</a>\r\n      and\r\n      <a>privacy policy</a>\r\n    </p>\r\n  </ion-toolbar>\r\n</ion-footer>");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-content class=\"authenticationPage\" color=\"light\">\r\n  <div class=\"divmargin ion-padding\">\r\n    <img src=\"/assets/images/black-whit-bkgrd.png\" alt=\"Uranse\" class=\"ion-padding\" />\r\n    <h3>Get your one-time code</h3>\r\n  </div>\r\n  <div class=\"ion-padding\">\r\n    <form>\r\n      <ion-input name=\"phonenumber\" class=\"ion-padding\" placeholder=\"Phone Number\" type=\"tel\" autocomplete=\"on\" autocorrect=\"off\"\r\n        inputmode=\"tel\" minlength=10 [(ngModel)] = \"phonenumber\"></ion-input>\r\n      <ion-button expand=\"block\" color=\"primary\" strong (click) = \"verifyPhoneNumber()\">\r\n        Continue\r\n      </ion-button>\r\n    </form>\r\n  </div>\r\n</ion-content>\r\n<ion-footer>\r\n  <ion-toolbar color=\"primary\">\r\n    <p class=\"ion-padding\">\r\n      By signing in you accept our\r\n      <a>Terms of use</a>\r\n      and\r\n      <a>privacy policy</a>\r\n    </p>\r\n  </ion-toolbar>\r\n</ion-footer>");
 
 /***/ }),
 
@@ -97,6 +97,7 @@ let AuthenticationPage = class AuthenticationPage {
     ngOnInit() {
     }
     verifyPhoneNumber() {
+        this.router.navigate(['/verification']);
     }
 };
 AuthenticationPage.ctorParameters = () => [

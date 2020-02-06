@@ -1,9 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>shipping</ion-title>
+  <ion-toolbar color="primary">
+    <ion-title>Ship</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list lines="full">
+    <ion-item *ngFor="let menu of shippingmenus" button detail>
+      <ion-icon name="{{ menu.iconName }}"></ion-icon>
+      <ion-label>
+        {{ menu.title }}
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

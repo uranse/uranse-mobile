@@ -1,8 +1,8 @@
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["navtab-navtab-module"], {
   /***/
@@ -21,7 +21,105 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n    <ion-tab-button tab=\"track\">\r\n      <ion-icon name=\"search\" color=\"light\"></ion-icon>\r\n      <ion-label>TRACK</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"ship\">\r\n      <ion-icon name=\"cube\" color=\"light\"></ion-icon>\r\n      <ion-label>SHIP</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"rates\">\r\n      <ion-icon name=\"calculator\" color=\"light\"></ion-icon>\r\n      <ion-label>RATE</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"settings\">\r\n      <ion-icon name=\"settings\" color=\"light\"></ion-icon>\r\n      <ion-label>SETTINGS</ion-label>\r\n    </ion-tab-button>\r\n  </ion-tab-bar>\r\n</ion-tabs>\r\n";
+    __webpack_exports__["default"] = "<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n    <ion-tab-button tab=\"track\">\r\n      <ion-icon name=\"search\" color=\"light\"></ion-icon>\r\n      <ion-label>TRACK</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"ship\">\r\n      <ion-icon name=\"cube\" color=\"light\"></ion-icon>\r\n      <ion-label>SHIP</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"estimate\">\r\n      <ion-icon name=\"calculator\" color=\"light\"></ion-icon>\r\n      <ion-label>RATE</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"settings\">\r\n      <ion-icon name=\"settings\" color=\"light\"></ion-icon>\r\n      <ion-label>SETTINGS</ion-label>\r\n    </ion-tab-button>\r\n  </ion-tab-bar>\r\n</ion-tabs>\r\n";
+    /***/
+  },
+
+  /***/
+  "./src/app/guards/home.guard.ts":
+  /*!**************************************!*\
+    !*** ./src/app/guards/home.guard.ts ***!
+    \**************************************/
+
+  /*! exports provided: HomeGuard */
+
+  /***/
+  function srcAppGuardsHomeGuardTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "HomeGuard", function () {
+      return HomeGuard;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _config_auth_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./../config/auth-constants */
+    "./src/app/config/auth-constants.ts");
+    /* harmony import */
+
+
+    var _services_storage_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./../services/storage.service */
+    "./src/app/services/storage.service.ts");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var HomeGuard =
+    /*#__PURE__*/
+    function () {
+      function HomeGuard(storageService, router) {
+        _classCallCheck(this, HomeGuard);
+
+        this.storageService = storageService;
+        this.router = router;
+      }
+
+      _createClass(HomeGuard, [{
+        key: "canActivate",
+        value: function canActivate() {
+          var _this = this;
+
+          return new Promise(function (resolve) {
+            _this.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(function (res) {
+              if (res) {
+                resolve(true);
+              } else {
+                _this.router.navigate(['login']);
+
+                resolve(false);
+              }
+            }).catch(function (err) {
+              resolve(false);
+            });
+          });
+        }
+      }]);
+
+      return HomeGuard;
+    }();
+
+    HomeGuard.ctorParameters = function () {
+      return [{
+        type: _services_storage_service__WEBPACK_IMPORTED_MODULE_2__["StorageService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }];
+    };
+
+    HomeGuard = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["Injectable"])({
+      providedIn: 'root'
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_storage_service__WEBPACK_IMPORTED_MODULE_2__["StorageService"], _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]])], HomeGuard);
     /***/
   },
 
@@ -59,20 +157,87 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _guards_home_guard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./../guards/home.guard */
+    "./src/app/guards/home.guard.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
-    var _navtab_page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _navtab_page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./navtab.page */
     "./src/app/navtab/navtab.page.ts");
 
     var routes = [{
-      path: '',
-      component: _navtab_page__WEBPACK_IMPORTED_MODULE_3__["NavtabPage"] // canActivate: [HomeGuard],
-
+      path: 'home',
+      component: _navtab_page__WEBPACK_IMPORTED_MODULE_4__["NavtabPage"],
+      canActivate: [_guards_home_guard__WEBPACK_IMPORTED_MODULE_2__["HomeGuard"]],
+      children: [{
+        path: 'track',
+        children: [{
+          path: '',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() | pages-tracking-tracking-module */
+            "pages-tracking-tracking-module").then(__webpack_require__.bind(null,
+            /*! ../pages/tracking/tracking.module */
+            "./src/app/pages/tracking/tracking.module.ts")).then(function (m) {
+              return m.TrackingPageModule;
+            });
+          }
+        }]
+      }, {
+        path: 'ship',
+        children: [{
+          path: '',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() | pages-shipping-shipping-module */
+            "pages-shipping-shipping-module").then(__webpack_require__.bind(null,
+            /*! ../pages/shipping/shipping.module */
+            "./src/app/pages/shipping/shipping.module.ts")).then(function (m) {
+              return m.ShippingPageModule;
+            });
+          }
+        }]
+      }, {
+        path: 'estimate',
+        children: [{
+          path: '',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() | pages-estimate-estimate-module */
+            "pages-estimate-estimate-module").then(__webpack_require__.bind(null,
+            /*! ../pages/estimate/estimate.module */
+            "./src/app/pages/estimate/estimate.module.ts")).then(function (m) {
+              return m.EstimatePageModule;
+            });
+          }
+        }]
+      }, {
+        path: 'settings',
+        children: [{
+          path: '',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() | pages-settings-settings-module */
+            "pages-settings-settings-module").then(__webpack_require__.bind(null,
+            /*! ../pages/settings/settings.module */
+            "./src/app/pages/settings/settings.module.ts")).then(function (m) {
+              return m.SettingsPageModule;
+            });
+          }
+        }]
+      }, {
+        path: '',
+        redirectTo: '/home/track',
+        pathMatch: 'full'
+      }]
     }];
 
     var NavtabPageRoutingModule = function NavtabPageRoutingModule() {
@@ -80,8 +245,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     NavtabPageRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(routes)],
-      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forChild(routes)],
+      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"]]
     })], NavtabPageRoutingModule);
     /***/
   },

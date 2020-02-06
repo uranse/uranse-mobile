@@ -13,7 +13,7 @@ export class AuthenticationPage implements OnInit {
 
   ngOnInit() {
   }
-  verifyPhoneNumber(){
-
+  verifyPhoneNumber() {
+    this.router.navigate(['/verification']);
   }
 }
