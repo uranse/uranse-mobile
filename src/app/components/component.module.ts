@@ -1,5 +1,4 @@
-
-
+import { HeaderLogoComponent } from './header-logo/header-logo.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +14,7 @@ import { StartButtonComponent } from './start-button/start-button.component';
   declarations: [
     SlidesComponent,
     StartButtonComponent,
+    HeaderLogoComponent
     //FeedCardComponent,
     //FeedUpdateComponent,
    // TimeagoComponent,
@@ -23,6 +23,7 @@ import { StartButtonComponent } from './start-button/start-button.component';
   exports: [
     SlidesComponent,
     StartButtonComponent,
+    HeaderLogoComponent
    // FeedCardComponent,
     //FeedUpdateComponent,
     //TimeagoComponent

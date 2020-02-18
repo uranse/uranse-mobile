@@ -21,13 +21,24 @@ const routes: Routes = [
       },
       {
         path: 'ship',
-        children: [
-          {
-            path: '',
-            loadChildren: () =>
-              import('../pages/shipping/shipping.module').then(m => m.ShippingPageModule)
-          }
-        ]
+        loadChildren: () => import('../pages/shipping/shipping.module').then(m => m.ShippingPageModule)
+        // children: [
+        //   {
+        //     path: '',
+        //     loadChildren: () =>
+        //       import('../pages/shipping/shipping.module').then(m => m.ShippingPageModule)
+        //   },
+          // {
+          //   path: 'shippingform',
+          //   loadChildren: () =>
+          //     import('../pages/shipping/shipping-form/shipping-form.module').then(m => m.ShippingFormPageModule)
+          // },
+          // {
+          //   path: 'shippinghistory',
+          //   loadChildren: () =>
+          //     import('../pages/shipping/shipping-history/shipping-history.module').then(m => m.ShippingHistoryPageModule)
+          // }
+        //]
       },
       {
         path: 'estimate',

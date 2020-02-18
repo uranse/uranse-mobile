@@ -1,17 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-
-import { RouterModule, Routes } from '@angular/router';
-
-import { ShippingPage } from './shipping.page';
+import { ShippingHistoryPage } from './shipping-history.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: ShippingPage
+    component: ShippingHistoryPage
   }
 ];
 
@@ -22,6 +19,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ShippingPage]
+  declarations: [ShippingHistoryPage]
 })
-export class ShippingPageModule {}
+export class ShippingHistoryPageModule {}

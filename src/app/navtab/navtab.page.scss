@@ -4,3 +4,8 @@ ion-content{
 ion-label{
     color: primary;
 }
+ion-tab-button {
+    --color: var(--ion-color-light);
+    --color-selected: var(--ion-color-medium);
+  }
+  

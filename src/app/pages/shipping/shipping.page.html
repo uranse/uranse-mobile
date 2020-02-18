@@ -1,12 +1,15 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>Ship</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title><img class="headerlogog" src="/assets/images/uranselogo-white.png" /></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-list lines="full">
-    <ion-item *ngFor="let menu of shippingmenus" button detail>
+    <ion-item *ngFor="let menu of shippingmenus" button detail [routerLink]="[menu.url]">
       <ion-icon name="{{ menu.iconName }}"></ion-icon>
       <ion-label>
         {{ menu.title }}

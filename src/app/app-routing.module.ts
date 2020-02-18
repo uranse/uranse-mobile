@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./navtab/navtab.module').then( m => m.NavtabPageModule)
+  },
+  {
+    path: 'ship/shippingform',
+    loadChildren: () => import('./pages/shipping/shipping-form/shipping-form.module').then( m => m.ShippingFormPageModule)
   }
 ];
 @NgModule({
