@@ -36,7 +36,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.name">
           <div
             class="error-message"
             *ngIf="
@@ -60,7 +60,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.businessname">
           <div
             class="error-message"
             *ngIf="
@@ -87,7 +87,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.address1">
           <div
             class="error-message"
             *ngIf="
@@ -113,7 +113,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.address2">
           <div
             class="error-message"
             *ngIf="
@@ -139,7 +139,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.postalcode">
           <div
             class="error-message"
             *ngIf="
@@ -161,7 +161,7 @@
         <ion-input type="text" formControlName="city" clearInput></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.city">
           <div
             class="error-message"
             *ngIf="
@@ -182,7 +182,7 @@
         <ion-input type="tel" formControlName="phone" clearInput></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.phone">
           <div
             class="error-message"
             *ngIf="
@@ -208,7 +208,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.email">
           <div
             class="error-message"
             *ngIf="
@@ -250,7 +250,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.name">
           <div
             class="error-message"
             *ngIf="
@@ -275,7 +275,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.businessname">
           <div
             class="error-message"
             *ngIf="
@@ -302,7 +302,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.address1">
           <div
             class="error-message"
             *ngIf="
@@ -328,7 +328,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.address2">
           <div
             class="error-message"
             *ngIf="
@@ -354,7 +354,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.postalcode">
           <div
             class="error-message"
             *ngIf="
@@ -376,7 +376,7 @@
         <ion-input type="text" formControlName="city" clearInput></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.city">
           <div
             class="error-message"
             *ngIf="
@@ -398,7 +398,7 @@
         <ion-input type="tel" formControlName="phone" clearInput></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.phone">
           <div
             class="error-message"
             *ngIf="
@@ -425,7 +425,7 @@
         ></ion-input>
       </ion-item>
       <div class="error-container">
-        <ng-container>
+        <ng-container *ngFor="let validation of validations.email">
           <div
             class="error-message"
             *ngIf="
