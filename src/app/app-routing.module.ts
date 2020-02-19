@@ -13,7 +13,8 @@ const routes: Routes = [
   {
     path: 'ship/shippingform',
     loadChildren: () => import('./pages/shipping/shipping-form/shipping-form.module').then( m => m.ShippingFormPageModule)
-  }
+  },
+
 ];
 @NgModule({
   imports: [

@@ -38,7 +38,7 @@ const routes: Routes = [
           //   loadChildren: () =>
           //     import('../pages/shipping/shipping-history/shipping-history.module').then(m => m.ShippingHistoryPageModule)
           // }
-        //]
+        // ]
       },
       {
         path: 'estimate',

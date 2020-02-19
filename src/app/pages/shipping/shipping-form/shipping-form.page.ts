@@ -2,6 +2,7 @@ import { PhoneValidator } from './../../../validators/phone-validator';
 import { COUNTRIES } from './../../../config/countries-support';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shipping-form',
@@ -15,6 +16,9 @@ export class ShippingFormPage implements OnInit {
   destinationForm: FormGroup;
   country_phone_group: FormGroup;
   countries = COUNTRIES;
+  step = 1;
+  totalStep = 4;
+  progressValue = this.step / this.totalStep;
 
   validations = {
     'name': [
@@ -29,13 +33,12 @@ export class ShippingFormPage implements OnInit {
       { type: 'maxlength', message: 'Address cannot be more than 50 characters long.' },
     ],
     'address2': [
-      { type: 'required', message: 'Address is required.' },
       { type: 'minlength', message: 'Address must be at least 5 characters long.' },
       { type: 'maxlength', message: 'Address cannot be more than 50 characters long.' },
     ],
     'postalcode': [
-      { type: 'required', message: 'Address is required.' },
-      { type: 'pattern', message: 'Enter a postal code.' }
+      { type: 'minlength', message: 'Address must be at least 3 characters long.' },
+      { type: 'maxlength', message: 'Address cannot be more than 6 characters long.' },
     ],
     'phone': [
       { type: 'required', message: 'Phone is required.' },
@@ -49,7 +52,7 @@ export class ShippingFormPage implements OnInit {
       { type: 'pattern', message: 'Enter a valid email.' }
     ],
   };
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
@@ -74,15 +77,14 @@ export class ShippingFormPage implements OnInit {
       ])),
       'address2': new FormControl('', Validators.compose([
         Validators.maxLength(50),
-        Validators.minLength(5),
-        Validators.required
+        Validators.minLength(5)
       ])),
       'postalcode': new FormControl('', Validators.compose([
-        Validators.required,
-        Validators.pattern('[0-9]')
+        Validators.maxLength(6),
+        Validators.minLength(3)
       ])),
       'phone': new FormControl('', Validators.required),
-      'country_phone': this.country_phone_group,
+      // 'country_phone': this.country_phone_group,
       'city': new FormControl('', Validators.required),
       'email': new FormControl('', Validators.compose([
         Validators.required,
@@ -100,15 +102,14 @@ export class ShippingFormPage implements OnInit {
       ])),
       'address2': new FormControl('', Validators.compose([
         Validators.maxLength(50),
-        Validators.minLength(5),
-        Validators.required
+        Validators.minLength(5)
       ])),
       'postalcode': new FormControl('', Validators.compose([
-        Validators.required,
-        Validators.pattern('[0-9]')
+        Validators.maxLength(6),
+        Validators.minLength(3)
       ])),
       'phone': new FormControl('', Validators.required),
-      'country_phone': this.country_phone_group,
+     // 'country_phone': this.country_phone_group,
       'city': new FormControl('', Validators.required),
       'email': new FormControl('', Validators.compose([
         Validators.required,
@@ -117,11 +118,15 @@ export class ShippingFormPage implements OnInit {
     });
   }
   next() {
-    this.shippingFormSlider.slideNext();
+    this.step += 1;
+    this.progressValue = this.step / this.totalStep;
   }
 
   prev() {
-    this.shippingFormSlider.slidePrev();
+    this.step -= 1;
+    this.progressValue = this.step / this.totalStep;
   }
-
+  navigateToShipPage() {
+    this.router.navigate(['home/ship']);
+  }
 }
