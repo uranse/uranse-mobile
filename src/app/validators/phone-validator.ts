@@ -1,5 +1,5 @@
 import { libphonenumber } from 'google-libphonenumber';
-import {AbstractControl, ValidatorFn} from '@angular/forms'
+import {AbstractControl, ValidatorFn} from '@angular/forms';
 
 export class PhoneValidator {
 

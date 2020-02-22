@@ -1,7 +1,9 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home/ship"></ion-back-button>
+      <ion-button (click)="prev()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
     </ion-buttons>
     <ion-title>
       <img
@@ -11,22 +13,26 @@
       />
     </ion-title>
     <ion-buttons slot="primary">
-      <ion-button [routerLink]="['/home']">
+      <ion-button (click)="navigateHome()">
         <ion-icon slot="icon-only" name="home"></ion-icon>
       </ion-button>
     </ion-buttons>
+    <ion-progress-bar
+      color="tertiary"
+      value="{{ progressValue }}"
+    ></ion-progress-bar>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-progress-bar value="{{ progressValue }}"></ion-progress-bar>
   <form [formGroup]="senderForm" *ngIf="step == 1" class="ion-padding">
     <div>
       <ion-text><h4>Where are you shipping from?</h4></ion-text>
     </div>
     <ion-list class="inputs-list" lines="full">
+      <!-- Name -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Name
+        <ion-label position="floating">
+         &nbsp; Name
         </ion-label>
         <ion-input
           type="text"
@@ -49,9 +55,10 @@
           </div>
         </ng-container>
       </div>
+      <!--Business Name -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Business Name (optional)
+        <ion-label position="floating">
+          &nbsp; Business Name
         </ion-label>
         <ion-input
           type="text"
@@ -74,10 +81,24 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Country -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Address 1
+        <ion-label position="floating">Country</ion-label>
+        <ion-select
+          formControlName="country"
+          cancelText="Cancel"
+          okText="OK"
+          required
+        >
+          <ion-select-option *ngFor="let item of countries" [value]="item">
+            {{ item.name }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      <!--Address 1 -->
+      <ion-item class="input-item">
+        <ion-label position="floating">
+          &nbsp; Address 1
         </ion-label>
         <ion-input
           type="text"
@@ -101,10 +122,10 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Address 2 -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Address 2
+        <ion-label position="floating">
+          &nbsp; Address 2
         </ion-label>
         <ion-input
           type="text"
@@ -127,10 +148,10 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Postal code -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Postal Code
+        <ion-label position="floating">
+          &nbsp; Postal Code
         </ion-label>
         <ion-input
           type="text"
@@ -153,12 +174,17 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- City / town -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          City/Town
+        <ion-label position="floating">
+          &nbsp; City/Town
         </ion-label>
-        <ion-input type="text" formControlName="city" clearInput></ion-input>
+        <ion-input
+          type="text"
+          formControlName="city"
+          clearInput
+          required
+        ></ion-input>
       </ion-item>
       <div class="error-container">
         <ng-container *ngFor="let validation of validations.city">
@@ -174,12 +200,36 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- State -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Phone
+        <ion-label position="floating">&nbsp;State / Province</ion-label>
+        <ion-select
+          formControlName="state"
+          cancelText="Cancel"
+          okText="OK"
+          required
+          placeholder="{{ senderForm.value.country.states[0] }}"
+        >
+          <ion-select-option
+            *ngFor="let item of senderForm.value.country.states"
+            [value]="item"
+          >
+            {{ item }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      <!-- Phone -->
+      <ion-item class="input-item">
+        <ion-label position="floating">
+          &nbsp; Phone
         </ion-label>
-        <ion-input type="tel" formControlName="phone" clearInput></ion-input>
+        <ion-input
+          type="text"
+          formControlName="phone"
+          clearInput
+          required
+          placeholder="{{ senderForm.value.country.phoneCode }}"
+        ></ion-input>
       </ion-item>
       <div class="error-container">
         <ng-container *ngFor="let validation of validations.phone">
@@ -195,16 +245,17 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Email -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Email
+        <ion-label position="floating">
+          &nbsp; Email
         </ion-label>
         <ion-input
           type="email"
           formControlName="email"
           clearInput
           inputmode="email"
+          required
         ></ion-input>
       </ion-item>
       <div class="error-container">
@@ -222,10 +273,9 @@
         </ng-container>
       </div>
     </ion-list>
-    <ion-button color="medium" (click)="navigateToShipPage()">
-      Cancel
-    </ion-button>
+
     <ion-button
+      expand="full"
       color="tertiary"
       [disabled]="!senderForm.valid"
       (click)="next()"
@@ -235,12 +285,13 @@
   </form>
   <form [formGroup]="destinationForm" *ngIf="step == 2" class="ion-padding">
     <div>
-      <ion-text><h4>Where are you shipping from?</h4></ion-text>
+      <ion-text><h4>Where is this shipment going?</h4></ion-text>
     </div>
     <ion-list class="inputs-list" lines="full">
+      <!-- Name -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Name
+        <ion-label position="floating">
+          &nbsp; Name
         </ion-label>
         <ion-input
           type="text"
@@ -264,9 +315,10 @@
           </div>
         </ng-container>
       </div>
+      <!--Business Name -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Business Name (optional)
+        <ion-label position="floating">
+          &nbsp; Business Name
         </ion-label>
         <ion-input
           type="text"
@@ -289,10 +341,24 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Country -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Address 1
+        <ion-label position="floating">&nbsp;Country</ion-label>
+        <ion-select
+          formControlName="country"
+          cancelText="Cancel"
+          okText="OK"
+          required
+        >
+          <ion-select-option *ngFor="let item of countries" [value]="item">
+            {{ item.name }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      <!-- Address 1 -->
+      <ion-item class="input-item">
+        <ion-label position="floating">
+          &nbsp; Address 1
         </ion-label>
         <ion-input
           type="text"
@@ -316,10 +382,10 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Address 2 -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Address 2
+        <ion-label position="floating">
+          &nbsp; Address 2
         </ion-label>
         <ion-input
           type="text"
@@ -342,10 +408,10 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Postal Code -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Postal Code
+        <ion-label position="floating">
+          &nbsp; Postal Code
         </ion-label>
         <ion-input
           type="text"
@@ -368,12 +434,17 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- City -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          City/Town
+        <ion-label position="floating">
+          &nbsp; City/Town
         </ion-label>
-        <ion-input type="text" formControlName="city" clearInput></ion-input>
+        <ion-input
+          type="text"
+          formControlName="city"
+          clearInput
+          required
+        ></ion-input>
       </ion-item>
       <div class="error-container">
         <ng-container *ngFor="let validation of validations.city">
@@ -390,12 +461,36 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- State -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Phone
+        <ion-label position="floating">&nbsp;State / Province</ion-label>
+        <ion-select
+          formControlName="state"
+          cancelText="Cancel"
+          okText="OK"
+          required
+          placeholder="{{ destinationForm.value.country.states[0] }}"
+        >
+          <ion-select-option
+            *ngFor="let item of destinationForm.value.country.states"
+            [value]="item"
+          >
+            {{ item }}
+          </ion-select-option>
+        </ion-select>
+      </ion-item>
+      <!-- Phone -->
+      <ion-item class="input-item">
+        <ion-label position="floating">
+          &nbsp; Phone
         </ion-label>
-        <ion-input type="tel" formControlName="phone" clearInput></ion-input>
+        <ion-input
+          type="text"
+          formControlName="phone"
+          clearInput
+          required
+          placeholder="{{ destinationForm.value.country.phoneCode }}"
+        ></ion-input>
       </ion-item>
       <div class="error-container">
         <ng-container *ngFor="let validation of validations.phone">
@@ -412,16 +507,17 @@
           </div>
         </ng-container>
       </div>
-
+      <!-- Email -->
       <ion-item class="input-item">
-        <ion-label class="ion-text-uppercase" position="floating">
-          Email
+        <ion-label position="floating">
+          &nbsp; Email
         </ion-label>
         <ion-input
           type="email"
           formControlName="email"
           clearInput
           inputmode="email"
+          required
         ></ion-input>
       </ion-item>
       <div class="error-container">
@@ -440,8 +536,9 @@
         </ng-container>
       </div>
     </ion-list>
-    <ion-button color="medium" (click)="prev()">Cancel</ion-button>
+
     <ion-button
+      expand="full"
       color="tertiary"
       [disabled]="!destinationForm.valid"
       (click)="next()"

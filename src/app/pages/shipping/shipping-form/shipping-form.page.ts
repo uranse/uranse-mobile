@@ -1,8 +1,10 @@
-import { PhoneValidator } from './../../../validators/phone-validator';
-import { COUNTRIES } from './../../../config/countries-support';
+import { SpinnerService } from './../../../services/spinner.service';
+import { AlertService } from './../../../services/alert.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import {COUNTRYLIST} from './../../../config/countries';
+
 
 @Component({
   selector: 'app-shipping-form',
@@ -10,12 +12,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./shipping-form.page.scss'],
 })
 export class ShippingFormPage implements OnInit {
-
-  @ViewChild('shippingFormSlider', {static: false}) shippingFormSlider;
   senderForm: FormGroup;
   destinationForm: FormGroup;
-  country_phone_group: FormGroup;
-  countries = COUNTRIES;
+  countries = [];
   step = 1;
   totalStep = 4;
   progressValue = this.step / this.totalStep;
@@ -25,7 +24,8 @@ export class ShippingFormPage implements OnInit {
       { type: 'required', message: 'Name is required.' },
     ],
     'businessname': [
-      { type: 'pattern', message: 'Enter a valid business name' },
+      { type: 'minlength', message: 'Business name must be at least 5 characters long.' },
+      { type: 'maxlength', message: 'Business name cannot be more than 50 characters long.' },
     ],
     'address1': [
       { type: 'required', message: 'Address is required.' },
@@ -42,7 +42,7 @@ export class ShippingFormPage implements OnInit {
     ],
     'phone': [
       { type: 'required', message: 'Phone is required.' },
-      { type: 'invalidCountryPhone', message: 'Phone is incorrect for the selected country.' }
+      { type: 'pattern', message: 'Enter a valid phone number.' }
     ],
     'city': [
       { type: 'required', message: 'City is required.' }
@@ -52,24 +52,18 @@ export class ShippingFormPage implements OnInit {
       { type: 'pattern', message: 'Enter a valid email.' }
     ],
   };
-  constructor(private router: Router) { }
+  constructor(private router: Router, private alert: AlertService, private spinner: SpinnerService) { }
 
   ngOnInit(): void {
-
-    const country = new FormControl(this.countries[0], Validators.required);
-    const phone = new FormControl('', Validators.compose([
-      Validators.required,
-      PhoneValidator.invalidCountryPhone(country)
-    ]));
-
-    this.country_phone_group = new FormGroup({
-      country: country,
-      phone: phone
-    });
+    this.countries = COUNTRYLIST;
 
     this.senderForm = new FormGroup({
       'name': new FormControl('', Validators.required),
-      'businessname': new FormControl('', Validators.pattern('[\s\S][a-zA-Z0-9]')),
+      'businessname': new FormControl('', Validators.compose([
+        Validators.maxLength(50),
+        Validators.minLength(5)
+      ])),
+      'country': new FormControl(this.countries[0], Validators.required),
       'address1': new FormControl('', Validators.compose([
         Validators.maxLength(50),
         Validators.minLength(5),
@@ -83,18 +77,26 @@ export class ShippingFormPage implements OnInit {
         Validators.maxLength(6),
         Validators.minLength(3)
       ])),
-      'phone': new FormControl('', Validators.required),
-      // 'country_phone': this.country_phone_group,
       'city': new FormControl('', Validators.required),
+      'state': new FormControl(this.countries[0].states[0], Validators.required),
+      'phone': new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('^\\+[1-9]\\d{1,14}$')
+      ])),
       'email': new FormControl('', Validators.compose([
         Validators.required,
+        Validators.email,
         Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
       ])),
     });
 
     this.destinationForm = new FormGroup({
       'name': new FormControl('', Validators.required),
-      'businessname': new FormControl('', Validators.pattern('[\s\S][a-zA-Z0-9]')),
+      'businessname': new FormControl('', Validators.compose([
+        Validators.maxLength(50),
+        Validators.minLength(5)
+      ])),
+      'country': new FormControl(this.countries[0], Validators.required),
       'address1': new FormControl('', Validators.compose([
         Validators.maxLength(50),
         Validators.minLength(5),
@@ -108,9 +110,12 @@ export class ShippingFormPage implements OnInit {
         Validators.maxLength(6),
         Validators.minLength(3)
       ])),
-      'phone': new FormControl('', Validators.required),
-     // 'country_phone': this.country_phone_group,
       'city': new FormControl('', Validators.required),
+      'state': new FormControl(this.countries[0].states[0], Validators.required),
+      'phone': new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('^\\+[1-9]\\d{1,14}$')
+      ])),
       'email': new FormControl('', Validators.compose([
         Validators.required,
         Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
@@ -123,10 +128,18 @@ export class ShippingFormPage implements OnInit {
   }
 
   prev() {
-    this.step -= 1;
-    this.progressValue = this.step / this.totalStep;
+    if (this.step === 1) {
+      this.router.navigate(['home/ship']);
+      this.senderForm.reset();
+      this.destinationForm.reset();
+    } else {
+      this.step -= 1;
+      this.progressValue = this.step / this.totalStep;
+    }
   }
-  navigateToShipPage() {
-    this.router.navigate(['home/ship']);
+  navigateHome() {
+    this.router.navigate(['/home']);
+    this.senderForm.reset();
+    this.destinationForm.reset();
   }
 }
