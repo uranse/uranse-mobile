@@ -21,7 +21,45 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-title>Ship</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content></ion-content>\n";
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"home\"></ion-back-button>\n    </ion-buttons>\n    <ion-title><img class=\"headerlogog\" src=\"/assets/images/uranselogo-white.png\" /></ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-list lines=\"full\">\n    <ion-item *ngFor=\"let menu of shippingmenus\" button detail [routerLink]=\"[menu.url]\">\n      <ion-icon name=\"{{ menu.iconName }}\"></ion-icon>\n      <ion-label>\n        {{ menu.title }}\n      </ion-label>\n    </ion-item>\n  </ion-list>\n</ion-content>\n";
+    /***/
+  },
+
+  /***/
+  "./src/app/config/routes.config.ts":
+  /*!*****************************************!*\
+    !*** ./src/app/config/routes.config.ts ***!
+    \*****************************************/
+
+  /*! exports provided: SHIPPINGPAGEROUTES */
+
+  /***/
+  function srcAppConfigRoutesConfigTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SHIPPINGPAGEROUTES", function () {
+      return SHIPPINGPAGEROUTES;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+
+    var SHIPPINGPAGEROUTES = [{
+      title: 'Shipping history',
+      url: '/home/ship/shippinghistory',
+      iconName: 'time'
+    }, {
+      title: 'Ship a package',
+      url: '/ship/shippingform',
+      iconName: 'cube'
+    }];
     /***/
   },
 
@@ -119,7 +157,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3BhZ2VzL3NoaXBwaW5nL3NoaXBwaW5nLnBhZ2Uuc2NzcyJ9 */";
+    __webpack_exports__["default"] = "ion-list > ion-item > ion-label {\n  margin-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvc2hpcHBpbmcvQzpcXFVzZXJzXFx2YWRleWVtaVxcRG9jdW1lbnRzXFxnb2F2aW5jZVxcdXJhbnNlLW1vYmlsZS9zcmNcXGFwcFxccGFnZXNcXHNoaXBwaW5nXFxzaGlwcGluZy5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL3NoaXBwaW5nL3NoaXBwaW5nLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGlCQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9zaGlwcGluZy9zaGlwcGluZy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tbGlzdCA+IGlvbi1pdGVtID4gaW9uLWxhYmVsIHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xyXG59IiwiaW9uLWxpc3QgPiBpb24taXRlbSA+IGlvbi1sYWJlbCB7XG4gIG1hcmdpbi1sZWZ0OiAxMHB4O1xufSJdfQ== */";
     /***/
   },
 
@@ -151,7 +189,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _config_routes_config__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./../../config/routes.config */
+    "./src/app/config/routes.config.ts");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
 
@@ -160,6 +204,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     function () {
       function ShippingPage() {
         _classCallCheck(this, ShippingPage);
+
+        this.shippingmenus = _config_routes_config__WEBPACK_IMPORTED_MODULE_1__["SHIPPINGPAGEROUTES"];
       }
 
       _createClass(ShippingPage, [{
@@ -170,7 +216,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       return ShippingPage;
     }();
 
-    ShippingPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+    ShippingPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["Component"])({
       selector: 'app-shipping',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! raw-loader!./shipping.page.html */

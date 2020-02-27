@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n    <ion-tab-button tab=\"track\">\r\n      <ion-icon name=\"search\" color=\"light\"></ion-icon>\r\n      <ion-label>TRACK</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"ship\">\r\n      <ion-icon name=\"cube\" color=\"light\"></ion-icon>\r\n      <ion-label>SHIP</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"estimate\">\r\n      <ion-icon name=\"calculator\" color=\"light\"></ion-icon>\r\n      <ion-label>RATE</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"settings\">\r\n      <ion-icon name=\"settings\" color=\"light\"></ion-icon>\r\n      <ion-label>SETTINGS</ion-label>\r\n    </ion-tab-button>\r\n  </ion-tab-bar>\r\n</ion-tabs>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-tabs>\r\n  <ion-tab-bar slot=\"bottom\" color=\"primary\">\r\n    <ion-tab-button tab=\"track\">\r\n      <ion-icon name=\"search\"></ion-icon>\r\n      <ion-label>TRACK</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"ship\">\r\n      <ion-icon name=\"cube\"></ion-icon>\r\n      <ion-label>SHIP</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"estimate\">\r\n      <ion-icon name=\"calculator\"></ion-icon>\r\n      <ion-label>RATE</ion-label>\r\n    </ion-tab-button>\r\n\r\n    <ion-tab-button tab=\"settings\">\r\n      <ion-icon name=\"settings\"></ion-icon>\r\n      <ion-label>SETTINGS</ion-label>\r\n    </ion-tab-button>\r\n  </ion-tab-bar>\r\n</ion-tabs>\r\n");
 
 /***/ }),
 
@@ -40,7 +40,7 @@ let HomeGuard = class HomeGuard {
     }
     canActivate() {
         return new Promise(resolve => {
-            this.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(res => {
+            this.storageService.getIsLoggedIn(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(res => {
                 if (res) {
                     resolve(true);
                 }
@@ -100,18 +100,30 @@ const routes = [
                 children: [
                     {
                         path: '',
-                        loadChildren: () => __webpack_require__.e(/*! import() | pages-tracking-tracking-module */ "pages-tracking-tracking-module").then(__webpack_require__.bind(null, /*! ../pages/tracking/tracking.module */ "./src/app/pages/tracking/tracking.module.ts")).then(m => m.TrackingPageModule)
+                        loadChildren: () => Promise.all(/*! import() | pages-tracking-tracking-module */[__webpack_require__.e("common"), __webpack_require__.e("pages-tracking-tracking-module")]).then(__webpack_require__.bind(null, /*! ../pages/tracking/tracking.module */ "./src/app/pages/tracking/tracking.module.ts")).then(m => m.TrackingPageModule)
                     }
                 ]
             },
             {
                 path: 'ship',
-                children: [
-                    {
-                        path: '',
-                        loadChildren: () => __webpack_require__.e(/*! import() | pages-shipping-shipping-module */ "pages-shipping-shipping-module").then(__webpack_require__.bind(null, /*! ../pages/shipping/shipping.module */ "./src/app/pages/shipping/shipping.module.ts")).then(m => m.ShippingPageModule)
-                    }
-                ]
+                loadChildren: () => __webpack_require__.e(/*! import() | pages-shipping-shipping-module */ "pages-shipping-shipping-module").then(__webpack_require__.bind(null, /*! ../pages/shipping/shipping.module */ "./src/app/pages/shipping/shipping.module.ts")).then(m => m.ShippingPageModule)
+                // children: [
+                //   {
+                //     path: '',
+                //     loadChildren: () =>
+                //       import('../pages/shipping/shipping.module').then(m => m.ShippingPageModule)
+                //   },
+                // {
+                //   path: 'shippingform',
+                //   loadChildren: () =>
+                //     import('../pages/shipping/shipping-form/shipping-form.module').then(m => m.ShippingFormPageModule)
+                // },
+                // {
+                //   path: 'shippinghistory',
+                //   loadChildren: () =>
+                //     import('../pages/shipping/shipping-history/shipping-history.module').then(m => m.ShippingHistoryPageModule)
+                // }
+                // ]
             },
             {
                 path: 'estimate',
@@ -203,7 +215,7 @@ NavtabPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("ion-content {\n  opacity: 0;\n}\n\nion-icon {\n  color: black;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2dGFiL0M6XFxVc2Vyc1xcdmFkZXllbWlcXERvY3VtZW50c1xcZ29hdmluY2VcXHVyYW5zZS1tb2JpbGUvc3JjXFxhcHBcXG5hdnRhYlxcbmF2dGFiLnBhZ2Uuc2NzcyIsInNyYy9hcHAvbmF2dGFiL25hdnRhYi5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxVQUFBO0FDQ0o7O0FEQ0E7RUFDSSxZQUFBO0FDRUoiLCJmaWxlIjoic3JjL2FwcC9uYXZ0YWIvbmF2dGFiLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImlvbi1jb250ZW50e1xyXG4gICAgb3BhY2l0eTogMDtcclxufVxyXG5pb24taWNvbntcclxuICAgIGNvbG9yOiBibGFjaztcclxufSIsImlvbi1jb250ZW50IHtcbiAgb3BhY2l0eTogMDtcbn1cblxuaW9uLWljb24ge1xuICBjb2xvcjogYmxhY2s7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("ion-content {\n  opacity: 0;\n}\n\nion-label {\n  color: primary;\n}\n\nion-tab-button {\n  --color: var(--ion-color-light);\n  --color-selected: var(--ion-color-medium);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2dGFiL0M6XFxVc2Vyc1xcdmFkZXllbWlcXERvY3VtZW50c1xcZ29hdmluY2VcXHVyYW5zZS1tb2JpbGUvc3JjXFxhcHBcXG5hdnRhYlxcbmF2dGFiLnBhZ2Uuc2NzcyIsInNyYy9hcHAvbmF2dGFiL25hdnRhYi5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxVQUFBO0FDQ0o7O0FEQ0E7RUFDSSxjQUFBO0FDRUo7O0FEQUE7RUFDSSwrQkFBQTtFQUNBLHlDQUFBO0FDR0oiLCJmaWxlIjoic3JjL2FwcC9uYXZ0YWIvbmF2dGFiLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbImlvbi1jb250ZW50e1xyXG4gICAgb3BhY2l0eTogMDtcclxufVxyXG5pb24tbGFiZWx7XHJcbiAgICBjb2xvcjogcHJpbWFyeTtcclxufVxyXG5pb24tdGFiLWJ1dHRvbiB7XHJcbiAgICAtLWNvbG9yOiB2YXIoLS1pb24tY29sb3ItbGlnaHQpO1xyXG4gICAgLS1jb2xvci1zZWxlY3RlZDogdmFyKC0taW9uLWNvbG9yLW1lZGl1bSk7XHJcbiAgfVxyXG4gICIsImlvbi1jb250ZW50IHtcbiAgb3BhY2l0eTogMDtcbn1cblxuaW9uLWxhYmVsIHtcbiAgY29sb3I6IHByaW1hcnk7XG59XG5cbmlvbi10YWItYnV0dG9uIHtcbiAgLS1jb2xvcjogdmFyKC0taW9uLWNvbG9yLWxpZ2h0KTtcbiAgLS1jb2xvci1zZWxlY3RlZDogdmFyKC0taW9uLWNvbG9yLW1lZGl1bSk7XG59Il19 */");
 
 /***/ }),
 

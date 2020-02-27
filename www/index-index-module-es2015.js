@@ -40,7 +40,7 @@ let IndexGuard = class IndexGuard {
     }
     canActivate() {
         return new Promise(resolve => {
-            this.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(res => {
+            this.storageService.getIsLoggedIn(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(res => {
                 if (res) {
                     this.router.navigate(['home']);
                     resolve(false);
@@ -96,7 +96,7 @@ let WelcomeGuard = class WelcomeGuard {
     }
     canActivate() {
         return new Promise(resolve => {
-            this.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].notNewUserKey).then(res => {
+            this.storageService.getIsLoggedIn(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].notNewUserKey).then(res => {
                 if (res) {
                     this.router.navigate(['login']);
                     resolve(false);
@@ -168,7 +168,7 @@ const routes = [
             },
             {
                 path: 'verification',
-                loadChildren: () => __webpack_require__.e(/*! import() | pages-verification-verification-module */ "pages-verification-verification-module").then(__webpack_require__.bind(null, /*! ../pages/verification/verification.module */ "./src/app/pages/verification/verification.module.ts")).then(m => m.VerificationPageModule)
+                loadChildren: () => Promise.all(/*! import() | pages-verification-verification-module */[__webpack_require__.e("common"), __webpack_require__.e("pages-verification-verification-module")]).then(__webpack_require__.bind(null, /*! ../pages/verification/verification.module */ "./src/app/pages/verification/verification.module.ts")).then(m => m.VerificationPageModule)
             },
         ]
     }

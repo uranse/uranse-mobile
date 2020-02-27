@@ -205,7 +205,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "loginAction",
         value: function loginAction() {
           this.authService.login();
-          this.alertService.presentAlertConfirm('logged in', 'welcome');
           this.router.navigate(['home']);
         }
       }]);
@@ -236,116 +235,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       /*! ./verification.page.scss */
       "./src/app/pages/verification/verification.page.scss")).default]
     }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"], _services_toast_service__WEBPACK_IMPORTED_MODULE_2__["ToastService"], _services_auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"], _services_storage_service__WEBPACK_IMPORTED_MODULE_3__["StorageService"], _services_alert_service__WEBPACK_IMPORTED_MODULE_1__["AlertService"]])], VerificationPage);
-    /***/
-  },
-
-  /***/
-  "./src/app/services/alert.service.ts":
-  /*!*******************************************!*\
-    !*** ./src/app/services/alert.service.ts ***!
-    \*******************************************/
-
-  /*! exports provided: AlertService */
-
-  /***/
-  function srcAppServicesAlertServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "AlertService", function () {
-      return AlertService;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @ionic/angular */
-    "./node_modules/@ionic/angular/dist/fesm5.js");
-
-    var AlertService =
-    /*#__PURE__*/
-    function () {
-      function AlertService(alertController) {
-        _classCallCheck(this, AlertService);
-
-        this.alertController = alertController;
-      }
-
-      _createClass(AlertService, [{
-        key: "presentAlertConfirm",
-        value: function presentAlertConfirm(header, message) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee() {
-            var choice, alert;
-            return regeneratorRuntime.wrap(function _callee$(_context) {
-              while (1) {
-                switch (_context.prev = _context.next) {
-                  case 0:
-                    _context.next = 2;
-                    return this.alertController.create({
-                      header: header,
-                      message: message,
-                      buttons: [{
-                        text: 'Cancel',
-                        role: 'cancel'
-                      }, {
-                        text: 'Okay',
-                        role: 'okay'
-                      }]
-                    });
-
-                  case 2:
-                    alert = _context.sent;
-                    _context.next = 5;
-                    return alert.present();
-
-                  case 5:
-                    _context.next = 7;
-                    return alert.onDidDismiss().then(function (data) {
-                      choice = data;
-                    });
-
-                  case 7:
-                    return _context.abrupt("return", choice);
-
-                  case 8:
-                  case "end":
-                    return _context.stop();
-                }
-              }
-            }, _callee, this);
-          }));
-        }
-      }]);
-
-      return AlertService;
-    }();
-
-    AlertService.ctorParameters = function () {
-      return [{
-        type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"]
-      }];
-    };
-
-    AlertService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-      providedIn: 'root'
-    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"]])], AlertService);
     /***/
   },
 
@@ -495,12 +384,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function show(textToShow, toastDuration, toastPosition) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee2() {
-            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+          regeneratorRuntime.mark(function _callee() {
+            return regeneratorRuntime.wrap(function _callee$(_context) {
               while (1) {
-                switch (_context2.prev = _context2.next) {
+                switch (_context.prev = _context.next) {
                   case 0:
-                    _context2.next = 2;
+                    _context.next = 2;
                     return Toast.show({
                       duration: toastDuration,
                       text: textToShow
@@ -508,10 +397,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                   case 2:
                   case "end":
-                    return _context2.stop();
+                    return _context.stop();
                 }
               }
-            }, _callee2);
+            }, _callee);
           }));
         }
       }]);

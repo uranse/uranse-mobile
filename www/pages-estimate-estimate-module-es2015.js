@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-title>Rates</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content></ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-title><img class=\"headerlogog\" src=\"/assets/images/uranselogo-white.png\" /></ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content></ion-content>\n");
 
 /***/ }),
 

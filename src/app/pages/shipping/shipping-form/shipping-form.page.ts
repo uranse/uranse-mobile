@@ -14,7 +14,9 @@ import {COUNTRYLIST} from './../../../config/countries';
 export class ShippingFormPage implements OnInit {
   senderForm: FormGroup;
   destinationForm: FormGroup;
+  packageForm: FormGroup;
   countries = [];
+  states = [];
   step = 1;
   totalStep = 4;
   progressValue = this.step / this.totalStep;
@@ -51,11 +53,46 @@ export class ShippingFormPage implements OnInit {
       { type: 'required', message: 'Email is required.' },
       { type: 'pattern', message: 'Enter a valid email.' }
     ],
+    'weight':[
+      { type: 'required', message: 'Weight is required.' },
+      { type: 'pattern', message: 'Weight entered is not a number.' },
+      { type: 'min', message: 'Weight min value not met.' },
+      { type: 'max', message: 'Weight max value exceeded.' },
+    ],
+    'length':[
+      { type: 'required', message: 'Length is required.' },
+      { type: 'pattern', message: 'Length entered is not a whole number.' },
+      { type: 'min', message: 'Length min value not met.' },
+      { type: 'max', message: 'Length max value exceeded.' },
+    ],
+    'width':[
+      { type: 'required', message: 'Width is required.' },
+      { type: 'pattern', message: 'Width entered is not a whole number.' },
+      { type: 'min', message: 'Width min value not met.' },
+      { type: 'max', message: 'Width max value exceeded.' },
+    ],
+    'height':[
+      { type: 'required', message: 'Height is required.' },
+      { type: 'pattern', message: 'Height entered is not a number.' },
+      { type: 'min', message: 'Height min value not met.' },
+      { type: 'max', message: 'Height max value exceeded.' },
+    ],
+    'value':[
+      { type: 'pattern', message: 'Weight entered is not a number.' }
+    ]
   };
   constructor(private router: Router, private alert: AlertService, private spinner: SpinnerService) { }
 
+  ionViewWillEnter() {
+   this.spinner.presentLoading();
+  }
+  ionViewDidEnter() {
+   this.spinner.dismiss();
+  }
+
   ngOnInit(): void {
     this.countries = COUNTRYLIST;
+    this.states = COUNTRYLIST[0].states;
 
     this.senderForm = new FormGroup({
       'name': new FormControl('', Validators.required),
@@ -121,19 +158,57 @@ export class ShippingFormPage implements OnInit {
         Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
       ])),
     });
+
+    this.packageForm = new FormGroup({
+      'packageType': new FormControl('', Validators.required),
+      'weight': new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('^\\d{0,3}(\\.\\d{1,2})?$'),
+        Validators.min(1),
+        Validators.max(150)
+      ])),
+      'length': new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('^[0-9]*$'),
+        Validators.min(1),
+        Validators.max(100)
+      ])),
+      'width': new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('^[0-9]*$'),
+        Validators.min(1),
+        Validators.max(100)
+      ])),
+      'height': new FormControl('', Validators.compose([
+        Validators.required,
+        Validators.pattern('^[0-9]*$'),
+        Validators.min(1),
+        Validators.max(100)
+      ])),
+    });
+
   }
+  onCountryChange(e) {
+    this.states = e.target.value.states;
+  };
+
   next() {
+    this.spinner.presentLoading();
     this.step += 1;
+    this.spinner.dismiss();
     this.progressValue = this.step / this.totalStep;
   }
 
   prev() {
+    this.spinner.presentLoading();
     if (this.step === 1) {
       this.router.navigate(['home/ship']);
       this.senderForm.reset();
       this.destinationForm.reset();
+      this.spinner.dismiss();
     } else {
       this.step -= 1;
+      this.spinner.dismiss();
       this.progressValue = this.step / this.totalStep;
     }
   }

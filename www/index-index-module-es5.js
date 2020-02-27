@@ -91,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this = this;
 
           return new Promise(function (resolve) {
-            _this.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(function (res) {
+            _this.storageService.getIsLoggedIn(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].loginKey).then(function (res) {
               if (res) {
                 _this.router.navigate(['home']);
 
@@ -189,7 +189,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this2 = this;
 
           return new Promise(function (resolve) {
-            _this2.storageService.get(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].notNewUserKey).then(function (res) {
+            _this2.storageService.getIsLoggedIn(_config_auth_constants__WEBPACK_IMPORTED_MODULE_1__["AuthConstants"].notNewUserKey).then(function (res) {
               if (res) {
                 _this2.router.navigate(['login']);
 
@@ -318,9 +318,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         path: 'verification',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() | pages-verification-verification-module */
-          "pages-verification-verification-module").then(__webpack_require__.bind(null,
+          [__webpack_require__.e("common"), __webpack_require__.e("pages-verification-verification-module")]).then(__webpack_require__.bind(null,
           /*! ../pages/verification/verification.module */
           "./src/app/pages/verification/verification.module.ts")).then(function (m) {
             return m.VerificationPageModule;

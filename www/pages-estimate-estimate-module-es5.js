@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-title>Rates</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content></ion-content>\n";
+    __webpack_exports__["default"] = "<ion-header>\n  <ion-toolbar color=\"primary\">\n    <ion-title><img class=\"headerlogog\" src=\"/assets/images/uranselogo-white.png\" /></ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content></ion-content>\n";
     /***/
   },
 

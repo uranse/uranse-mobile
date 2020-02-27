@@ -789,6 +789,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return m.NavtabPageModule;
         });
       }
+    }, {
+      path: 'ship/shippingform',
+      loadChildren: function loadChildren() {
+        return Promise.all(
+        /*! import() | pages-shipping-shipping-form-shipping-form-module */
+        [__webpack_require__.e("common"), __webpack_require__.e("pages-shipping-shipping-form-shipping-form-module")]).then(__webpack_require__.bind(null,
+        /*! ./pages/shipping/shipping-form/shipping-form.module */
+        "./src/app/pages/shipping/shipping-form/shipping-form.module.ts")).then(function (m) {
+          return m.ShippingFormPageModule;
+        });
+      }
     }];
 
     var AppRoutingModule = function AppRoutingModule() {

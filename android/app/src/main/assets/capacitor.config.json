@@ -15,5 +15,15 @@
       "SplashScreen": "screen",
       "SplashScreenDelay": "3000"
     }
+  },
+  "plugins":{
+    "CapacitorFirebaseAuth":{
+      "providers":["phone"],
+      "languageCode":"en",
+      "nativeAuth":false,
+      "permissions":{
+        
+      }
+    }
   }
 }

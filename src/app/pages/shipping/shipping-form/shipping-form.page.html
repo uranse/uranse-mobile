@@ -89,8 +89,9 @@
           cancelText="Cancel"
           okText="OK"
           required
+          (ionChange)="onCountryChange($event)"
         >
-          <ion-select-option *ngFor="let item of countries" [value]="item">
+          <ion-select-option *ngFor="let item of countries" [value]="item" >
             {{ item.name }}
           </ion-select-option>
         </ion-select>
@@ -208,10 +209,11 @@
           cancelText="Cancel"
           okText="OK"
           required
-          placeholder="{{ senderForm.value.country.states[0] }}"
+          [disabled]="!(senderForm.get('country').dirty ||
+          senderForm.get('country').touched)"
         >
           <ion-select-option
-            *ngFor="let item of senderForm.value.country.states"
+            *ngFor="let item of states"
             [value]="item"
           >
             {{ item }}
@@ -283,7 +285,7 @@
       Continue
     </ion-button>
   </form>
-  <form [formGroup]="destinationForm" *ngIf="step == 2" class="ion-padding">
+  <form [formGroup]="destinationForm" *ngIf="step == 2" class="ion-padding form-animate">
     <div>
       <ion-text><h4>Where is this shipment going?</h4></ion-text>
     </div>
@@ -349,6 +351,7 @@
           cancelText="Cancel"
           okText="OK"
           required
+          (ionChange)="onCountryChange($event)"
         >
           <ion-select-option *ngFor="let item of countries" [value]="item">
             {{ item.name }}
@@ -469,10 +472,11 @@
           cancelText="Cancel"
           okText="OK"
           required
-          placeholder="{{ destinationForm.value.country.states[0] }}"
+          [disabled]="!(destinationForm.get('country').dirty ||
+          destinationForm.get('country').touched)"
         >
           <ion-select-option
-            *ngFor="let item of destinationForm.value.country.states"
+            *ngFor="let item of states"
             [value]="item"
           >
             {{ item }}

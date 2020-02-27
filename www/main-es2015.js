@@ -700,7 +700,11 @@ const routes = [
     {
         path: '',
         loadChildren: () => Promise.all(/*! import() | navtab-navtab-module */[__webpack_require__.e("default~index-index-module~navtab-navtab-module"), __webpack_require__.e("navtab-navtab-module")]).then(__webpack_require__.bind(null, /*! ./navtab/navtab.module */ "./src/app/navtab/navtab.module.ts")).then(m => m.NavtabPageModule)
-    }
+    },
+    {
+        path: 'ship/shippingform',
+        loadChildren: () => Promise.all(/*! import() | pages-shipping-shipping-form-shipping-form-module */[__webpack_require__.e("common"), __webpack_require__.e("pages-shipping-shipping-form-shipping-form-module")]).then(__webpack_require__.bind(null, /*! ./pages/shipping/shipping-form/shipping-form.module */ "./src/app/pages/shipping/shipping-form/shipping-form.module.ts")).then(m => m.ShippingFormPageModule)
+    },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };

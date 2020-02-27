@@ -6,6 +6,10 @@ function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) ||
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -132,33 +136,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       _createClass(Slides, [{
         key: "optionsChanged",
-        value: function optionsChanged() {
-          var swiper;
-          return regeneratorRuntime.async(function optionsChanged$(_context) {
-            while (1) {
-              switch (_context.prev = _context.next) {
-                case 0:
-                  if (!this.swiperReady) {
+        value: function () {
+          var _optionsChanged = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    if (!this.swiperReady) {
+                      _context.next = 7;
+                      break;
+                    }
+
+                    _context.next = 3;
+                    return this.getSwiper();
+
+                  case 3:
+                    swiper = _context.sent;
+                    Object.assign(swiper.params, this.options);
                     _context.next = 7;
-                    break;
-                  }
+                    return this.update();
 
-                  _context.next = 3;
-                  return regeneratorRuntime.awrap(this.getSwiper());
-
-                case 3:
-                  swiper = _context.sent;
-                  Object.assign(swiper.params, this.options);
-                  _context.next = 7;
-                  return regeneratorRuntime.awrap(this.update());
-
-                case 7:
-                case "end":
-                  return _context.stop();
+                  case 7:
+                  case "end":
+                    return _context.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee, this);
+          }));
+
+          function optionsChanged() {
+            return _optionsChanged.apply(this, arguments);
+          }
+
+          return optionsChanged;
+        }()
       }, {
         key: "connectedCallback",
         value: function connectedCallback() {
@@ -179,37 +193,47 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         }
       }, {
         key: "disconnectedCallback",
-        value: function disconnectedCallback() {
-          var _this3 = this;
+        value: function () {
+          var _disconnectedCallback = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee2() {
+            var _this3 = this;
 
-          var swiper;
-          return regeneratorRuntime.async(function disconnectedCallback$(_context2) {
-            while (1) {
-              switch (_context2.prev = _context2.next) {
-                case 0:
-                  if (this.mutationO) {
-                    this.mutationO.disconnect();
-                    this.mutationO = undefined;
-                  }
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              while (1) {
+                switch (_context2.prev = _context2.next) {
+                  case 0:
+                    if (this.mutationO) {
+                      this.mutationO.disconnect();
+                      this.mutationO = undefined;
+                    }
 
-                  _context2.next = 3;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+                    _context2.next = 3;
+                    return this.getSwiper();
 
-                case 3:
-                  swiper = _context2.sent;
-                  swiper.destroy(true, true);
-                  this.swiper = new Promise(function (resolve) {
-                    _this3.readySwiper = resolve;
-                  });
-                  this.swiperReady = false;
+                  case 3:
+                    swiper = _context2.sent;
+                    swiper.destroy(true, true);
+                    this.swiper = new Promise(function (resolve) {
+                      _this3.readySwiper = resolve;
+                    });
+                    this.swiperReady = false;
 
-                case 7:
-                case "end":
-                  return _context2.stop();
+                  case 7:
+                  case "end":
+                    return _context2.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee2, this);
+          }));
+
+          function disconnectedCallback() {
+            return _disconnectedCallback.apply(this, arguments);
+          }
+
+          return disconnectedCallback;
+        }()
         /**
          * Update the underlying slider implementation. Call this if you've added or removed
          * child slides.
@@ -217,29 +241,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "update",
-        value: function update() {
-          var _ref, _ref2, swiper;
+        value: function () {
+          var _update = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee3() {
+            var _ref, _ref2, swiper;
 
-          return regeneratorRuntime.async(function update$(_context3) {
-            while (1) {
-              switch (_context3.prev = _context3.next) {
-                case 0:
-                  _context3.next = 2;
-                  return regeneratorRuntime.awrap(Promise.all([this.getSwiper(), waitForSlides(this.el)]));
+            return regeneratorRuntime.wrap(function _callee3$(_context3) {
+              while (1) {
+                switch (_context3.prev = _context3.next) {
+                  case 0:
+                    _context3.next = 2;
+                    return Promise.all([this.getSwiper(), waitForSlides(this.el)]);
 
-                case 2:
-                  _ref = _context3.sent;
-                  _ref2 = _slicedToArray(_ref, 1);
-                  swiper = _ref2[0];
-                  swiper.update();
+                  case 2:
+                    _ref = _context3.sent;
+                    _ref2 = _slicedToArray(_ref, 1);
+                    swiper = _ref2[0];
+                    swiper.update();
 
-                case 6:
-                case "end":
-                  return _context3.stop();
+                  case 6:
+                  case "end":
+                    return _context3.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee3, this);
+          }));
+
+          function update() {
+            return _update.apply(this, arguments);
+          }
+
+          return update;
+        }()
         /**
          * Force swiper to update its height (when autoHeight is enabled) for the duration
          * equal to 'speed' parameter.
@@ -249,26 +283,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "updateAutoHeight",
-        value: function updateAutoHeight(speed) {
-          var swiper;
-          return regeneratorRuntime.async(function updateAutoHeight$(_context4) {
-            while (1) {
-              switch (_context4.prev = _context4.next) {
-                case 0:
-                  _context4.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _updateAutoHeight = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee4(speed) {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee4$(_context4) {
+              while (1) {
+                switch (_context4.prev = _context4.next) {
+                  case 0:
+                    _context4.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context4.sent;
-                  swiper.updateAutoHeight(speed);
+                  case 2:
+                    swiper = _context4.sent;
+                    swiper.updateAutoHeight(speed);
 
-                case 4:
-                case "end":
-                  return _context4.stop();
+                  case 4:
+                  case "end":
+                    return _context4.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee4, this);
+          }));
+
+          function updateAutoHeight(_x) {
+            return _updateAutoHeight.apply(this, arguments);
+          }
+
+          return updateAutoHeight;
+        }()
         /**
          * Transition to the specified slide.
          *
@@ -279,26 +323,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "slideTo",
-        value: function slideTo(index, speed, runCallbacks) {
-          var swiper;
-          return regeneratorRuntime.async(function slideTo$(_context5) {
-            while (1) {
-              switch (_context5.prev = _context5.next) {
-                case 0:
-                  _context5.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _slideTo = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee5(index, speed, runCallbacks) {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+              while (1) {
+                switch (_context5.prev = _context5.next) {
+                  case 0:
+                    _context5.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context5.sent;
-                  swiper.slideTo(index, speed, runCallbacks);
+                  case 2:
+                    swiper = _context5.sent;
+                    swiper.slideTo(index, speed, runCallbacks);
 
-                case 4:
-                case "end":
-                  return _context5.stop();
+                  case 4:
+                  case "end":
+                    return _context5.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee5, this);
+          }));
+
+          function slideTo(_x2, _x3, _x4) {
+            return _slideTo.apply(this, arguments);
+          }
+
+          return slideTo;
+        }()
         /**
          * Transition to the next slide.
          *
@@ -308,26 +362,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "slideNext",
-        value: function slideNext(speed, runCallbacks) {
-          var swiper;
-          return regeneratorRuntime.async(function slideNext$(_context6) {
-            while (1) {
-              switch (_context6.prev = _context6.next) {
-                case 0:
-                  _context6.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _slideNext = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee6(speed, runCallbacks) {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+              while (1) {
+                switch (_context6.prev = _context6.next) {
+                  case 0:
+                    _context6.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context6.sent;
-                  swiper.slideNext(speed, runCallbacks);
+                  case 2:
+                    swiper = _context6.sent;
+                    swiper.slideNext(speed, runCallbacks);
 
-                case 4:
-                case "end":
-                  return _context6.stop();
+                  case 4:
+                  case "end":
+                    return _context6.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee6, this);
+          }));
+
+          function slideNext(_x5, _x6) {
+            return _slideNext.apply(this, arguments);
+          }
+
+          return slideNext;
+        }()
         /**
          * Transition to the previous slide.
          *
@@ -337,214 +401,294 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "slidePrev",
-        value: function slidePrev(speed, runCallbacks) {
-          var swiper;
-          return regeneratorRuntime.async(function slidePrev$(_context7) {
-            while (1) {
-              switch (_context7.prev = _context7.next) {
-                case 0:
-                  _context7.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _slidePrev = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee7(speed, runCallbacks) {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+              while (1) {
+                switch (_context7.prev = _context7.next) {
+                  case 0:
+                    _context7.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context7.sent;
-                  swiper.slidePrev(speed, runCallbacks);
+                  case 2:
+                    swiper = _context7.sent;
+                    swiper.slidePrev(speed, runCallbacks);
 
-                case 4:
-                case "end":
-                  return _context7.stop();
+                  case 4:
+                  case "end":
+                    return _context7.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee7, this);
+          }));
+
+          function slidePrev(_x7, _x8) {
+            return _slidePrev.apply(this, arguments);
+          }
+
+          return slidePrev;
+        }()
         /**
          * Get the index of the active slide.
          */
 
       }, {
         key: "getActiveIndex",
-        value: function getActiveIndex() {
-          var swiper;
-          return regeneratorRuntime.async(function getActiveIndex$(_context8) {
-            while (1) {
-              switch (_context8.prev = _context8.next) {
-                case 0:
-                  _context8.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _getActiveIndex = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee8() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+              while (1) {
+                switch (_context8.prev = _context8.next) {
+                  case 0:
+                    _context8.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context8.sent;
-                  return _context8.abrupt("return", swiper.activeIndex);
+                  case 2:
+                    swiper = _context8.sent;
+                    return _context8.abrupt("return", swiper.activeIndex);
 
-                case 4:
-                case "end":
-                  return _context8.stop();
+                  case 4:
+                  case "end":
+                    return _context8.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee8, this);
+          }));
+
+          function getActiveIndex() {
+            return _getActiveIndex.apply(this, arguments);
+          }
+
+          return getActiveIndex;
+        }()
         /**
          * Get the index of the previous slide.
          */
 
       }, {
         key: "getPreviousIndex",
-        value: function getPreviousIndex() {
-          var swiper;
-          return regeneratorRuntime.async(function getPreviousIndex$(_context9) {
-            while (1) {
-              switch (_context9.prev = _context9.next) {
-                case 0:
-                  _context9.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _getPreviousIndex = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee9() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee9$(_context9) {
+              while (1) {
+                switch (_context9.prev = _context9.next) {
+                  case 0:
+                    _context9.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context9.sent;
-                  return _context9.abrupt("return", swiper.previousIndex);
+                  case 2:
+                    swiper = _context9.sent;
+                    return _context9.abrupt("return", swiper.previousIndex);
 
-                case 4:
-                case "end":
-                  return _context9.stop();
+                  case 4:
+                  case "end":
+                    return _context9.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee9, this);
+          }));
+
+          function getPreviousIndex() {
+            return _getPreviousIndex.apply(this, arguments);
+          }
+
+          return getPreviousIndex;
+        }()
         /**
          * Get the total number of slides.
          */
 
       }, {
         key: "length",
-        value: function length() {
-          var swiper;
-          return regeneratorRuntime.async(function length$(_context10) {
-            while (1) {
-              switch (_context10.prev = _context10.next) {
-                case 0:
-                  _context10.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _length = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee10() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+              while (1) {
+                switch (_context10.prev = _context10.next) {
+                  case 0:
+                    _context10.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context10.sent;
-                  return _context10.abrupt("return", swiper.slides.length);
+                  case 2:
+                    swiper = _context10.sent;
+                    return _context10.abrupt("return", swiper.slides.length);
 
-                case 4:
-                case "end":
-                  return _context10.stop();
+                  case 4:
+                  case "end":
+                    return _context10.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee10, this);
+          }));
+
+          function length() {
+            return _length.apply(this, arguments);
+          }
+
+          return length;
+        }()
         /**
          * Get whether or not the current slide is the last slide.
          */
 
       }, {
         key: "isEnd",
-        value: function isEnd() {
-          var swiper;
-          return regeneratorRuntime.async(function isEnd$(_context11) {
-            while (1) {
-              switch (_context11.prev = _context11.next) {
-                case 0:
-                  _context11.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _isEnd = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee11() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee11$(_context11) {
+              while (1) {
+                switch (_context11.prev = _context11.next) {
+                  case 0:
+                    _context11.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context11.sent;
-                  return _context11.abrupt("return", swiper.isEnd);
+                  case 2:
+                    swiper = _context11.sent;
+                    return _context11.abrupt("return", swiper.isEnd);
 
-                case 4:
-                case "end":
-                  return _context11.stop();
+                  case 4:
+                  case "end":
+                    return _context11.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee11, this);
+          }));
+
+          function isEnd() {
+            return _isEnd.apply(this, arguments);
+          }
+
+          return isEnd;
+        }()
         /**
          * Get whether or not the current slide is the first slide.
          */
 
       }, {
         key: "isBeginning",
-        value: function isBeginning() {
-          var swiper;
-          return regeneratorRuntime.async(function isBeginning$(_context12) {
-            while (1) {
-              switch (_context12.prev = _context12.next) {
-                case 0:
-                  _context12.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _isBeginning = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee12() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee12$(_context12) {
+              while (1) {
+                switch (_context12.prev = _context12.next) {
+                  case 0:
+                    _context12.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context12.sent;
-                  return _context12.abrupt("return", swiper.isBeginning);
+                  case 2:
+                    swiper = _context12.sent;
+                    return _context12.abrupt("return", swiper.isBeginning);
 
-                case 4:
-                case "end":
-                  return _context12.stop();
+                  case 4:
+                  case "end":
+                    return _context12.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee12, this);
+          }));
+
+          function isBeginning() {
+            return _isBeginning.apply(this, arguments);
+          }
+
+          return isBeginning;
+        }()
         /**
          * Start auto play.
          */
 
       }, {
         key: "startAutoplay",
-        value: function startAutoplay() {
-          var swiper;
-          return regeneratorRuntime.async(function startAutoplay$(_context13) {
-            while (1) {
-              switch (_context13.prev = _context13.next) {
-                case 0:
-                  _context13.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _startAutoplay = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee13() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee13$(_context13) {
+              while (1) {
+                switch (_context13.prev = _context13.next) {
+                  case 0:
+                    _context13.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context13.sent;
+                  case 2:
+                    swiper = _context13.sent;
 
-                  if (swiper.autoplay) {
-                    swiper.autoplay.start();
-                  }
+                    if (swiper.autoplay) {
+                      swiper.autoplay.start();
+                    }
 
-                case 4:
-                case "end":
-                  return _context13.stop();
+                  case 4:
+                  case "end":
+                    return _context13.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee13, this);
+          }));
+
+          function startAutoplay() {
+            return _startAutoplay.apply(this, arguments);
+          }
+
+          return startAutoplay;
+        }()
         /**
          * Stop auto play.
          */
 
       }, {
         key: "stopAutoplay",
-        value: function stopAutoplay() {
-          var swiper;
-          return regeneratorRuntime.async(function stopAutoplay$(_context14) {
-            while (1) {
-              switch (_context14.prev = _context14.next) {
-                case 0:
-                  _context14.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _stopAutoplay = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee14() {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee14$(_context14) {
+              while (1) {
+                switch (_context14.prev = _context14.next) {
+                  case 0:
+                    _context14.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context14.sent;
+                  case 2:
+                    swiper = _context14.sent;
 
-                  if (swiper.autoplay) {
-                    swiper.autoplay.stop();
-                  }
+                    if (swiper.autoplay) {
+                      swiper.autoplay.stop();
+                    }
 
-                case 4:
-                case "end":
-                  return _context14.stop();
+                  case 4:
+                  case "end":
+                    return _context14.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee14, this);
+          }));
+
+          function stopAutoplay() {
+            return _stopAutoplay.apply(this, arguments);
+          }
+
+          return stopAutoplay;
+        }()
         /**
          * Lock or unlock the ability to slide to the next slide.
          *
@@ -553,26 +697,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "lockSwipeToNext",
-        value: function lockSwipeToNext(lock) {
-          var swiper;
-          return regeneratorRuntime.async(function lockSwipeToNext$(_context15) {
-            while (1) {
-              switch (_context15.prev = _context15.next) {
-                case 0:
-                  _context15.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _lockSwipeToNext = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee15(lock) {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee15$(_context15) {
+              while (1) {
+                switch (_context15.prev = _context15.next) {
+                  case 0:
+                    _context15.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context15.sent;
-                  swiper.allowSlideNext = !lock;
+                  case 2:
+                    swiper = _context15.sent;
+                    swiper.allowSlideNext = !lock;
 
-                case 4:
-                case "end":
-                  return _context15.stop();
+                  case 4:
+                  case "end":
+                    return _context15.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee15, this);
+          }));
+
+          function lockSwipeToNext(_x9) {
+            return _lockSwipeToNext.apply(this, arguments);
+          }
+
+          return lockSwipeToNext;
+        }()
         /**
          * Lock or unlock the ability to slide to the previous slide.
          *
@@ -581,26 +735,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "lockSwipeToPrev",
-        value: function lockSwipeToPrev(lock) {
-          var swiper;
-          return regeneratorRuntime.async(function lockSwipeToPrev$(_context16) {
-            while (1) {
-              switch (_context16.prev = _context16.next) {
-                case 0:
-                  _context16.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _lockSwipeToPrev = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee16(lock) {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee16$(_context16) {
+              while (1) {
+                switch (_context16.prev = _context16.next) {
+                  case 0:
+                    _context16.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context16.sent;
-                  swiper.allowSlidePrev = !lock;
+                  case 2:
+                    swiper = _context16.sent;
+                    swiper.allowSlidePrev = !lock;
 
-                case 4:
-                case "end":
-                  return _context16.stop();
+                  case 4:
+                  case "end":
+                    return _context16.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee16, this);
+          }));
+
+          function lockSwipeToPrev(_x10) {
+            return _lockSwipeToPrev.apply(this, arguments);
+          }
+
+          return lockSwipeToPrev;
+        }()
         /**
          * Lock or unlock the ability to slide to the next or previous slide.
          *
@@ -609,28 +773,38 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "lockSwipes",
-        value: function lockSwipes(lock) {
-          var swiper;
-          return regeneratorRuntime.async(function lockSwipes$(_context17) {
-            while (1) {
-              switch (_context17.prev = _context17.next) {
-                case 0:
-                  _context17.next = 2;
-                  return regeneratorRuntime.awrap(this.getSwiper());
+        value: function () {
+          var _lockSwipes = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee17(lock) {
+            var swiper;
+            return regeneratorRuntime.wrap(function _callee17$(_context17) {
+              while (1) {
+                switch (_context17.prev = _context17.next) {
+                  case 0:
+                    _context17.next = 2;
+                    return this.getSwiper();
 
-                case 2:
-                  swiper = _context17.sent;
-                  swiper.allowSlideNext = !lock;
-                  swiper.allowSlidePrev = !lock;
-                  swiper.allowTouchMove = !lock;
+                  case 2:
+                    swiper = _context17.sent;
+                    swiper.allowSlideNext = !lock;
+                    swiper.allowSlidePrev = !lock;
+                    swiper.allowTouchMove = !lock;
 
-                case 6:
-                case "end":
-                  return _context17.stop();
+                  case 6:
+                  case "end":
+                    return _context17.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee17, this);
+          }));
+
+          function lockSwipes(_x11) {
+            return _lockSwipes.apply(this, arguments);
+          }
+
+          return lockSwipes;
+        }()
         /**
          * Get the Swiper instance.
          * Use this to access the full Swiper API.
@@ -639,57 +813,77 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
       }, {
         key: "getSwiper",
-        value: function getSwiper() {
-          return regeneratorRuntime.async(function getSwiper$(_context18) {
-            while (1) {
-              switch (_context18.prev = _context18.next) {
-                case 0:
-                  return _context18.abrupt("return", this.swiper);
+        value: function () {
+          var _getSwiper = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee18() {
+            return regeneratorRuntime.wrap(function _callee18$(_context18) {
+              while (1) {
+                switch (_context18.prev = _context18.next) {
+                  case 0:
+                    return _context18.abrupt("return", this.swiper);
 
-                case 1:
-                case "end":
-                  return _context18.stop();
+                  case 1:
+                  case "end":
+                    return _context18.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee18, this);
+          }));
+
+          function getSwiper() {
+            return _getSwiper.apply(this, arguments);
+          }
+
+          return getSwiper;
+        }()
       }, {
         key: "initSwiper",
-        value: function initSwiper() {
-          var finalOptions, _ref3, Swiper, swiper;
+        value: function () {
+          var _initSwiper = _asyncToGenerator(
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee19() {
+            var finalOptions, _ref3, Swiper, swiper;
 
-          return regeneratorRuntime.async(function initSwiper$(_context19) {
-            while (1) {
-              switch (_context19.prev = _context19.next) {
-                case 0:
-                  finalOptions = this.normalizeOptions(); // init swiper core
-                  // @ts-ignore
+            return regeneratorRuntime.wrap(function _callee19$(_context19) {
+              while (1) {
+                switch (_context19.prev = _context19.next) {
+                  case 0:
+                    finalOptions = this.normalizeOptions(); // init swiper core
+                    // @ts-ignore
 
-                  _context19.next = 3;
-                  return regeneratorRuntime.awrap(__webpack_require__.e(
-                  /*! import() | swiper-bundle-ccdaac54-js */
-                  "swiper-bundle-ccdaac54-js").then(__webpack_require__.bind(null,
-                  /*! ./swiper.bundle-ccdaac54.js */
-                  "./node_modules/@ionic/core/dist/esm/swiper.bundle-ccdaac54.js")));
+                    _context19.next = 3;
+                    return __webpack_require__.e(
+                    /*! import() | swiper-bundle-ccdaac54-js */
+                    "swiper-bundle-ccdaac54-js").then(__webpack_require__.bind(null,
+                    /*! ./swiper.bundle-ccdaac54.js */
+                    "./node_modules/@ionic/core/dist/esm/swiper.bundle-ccdaac54.js"));
 
-                case 3:
-                  _ref3 = _context19.sent;
-                  Swiper = _ref3.Swiper;
-                  _context19.next = 7;
-                  return regeneratorRuntime.awrap(waitForSlides(this.el));
+                  case 3:
+                    _ref3 = _context19.sent;
+                    Swiper = _ref3.Swiper;
+                    _context19.next = 7;
+                    return waitForSlides(this.el);
 
-                case 7:
-                  swiper = new Swiper(this.el, finalOptions);
-                  this.swiperReady = true;
-                  this.readySwiper(swiper);
+                  case 7:
+                    swiper = new Swiper(this.el, finalOptions);
+                    this.swiperReady = true;
+                    this.readySwiper(swiper);
 
-                case 10:
-                case "end":
-                  return _context19.stop();
+                  case 10:
+                  case "end":
+                    return _context19.stop();
+                }
               }
-            }
-          }, null, this);
-        }
+            }, _callee19, this);
+          }));
+
+          function initSwiper() {
+            return _initSwiper.apply(this, arguments);
+          }
+
+          return initSwiper;
+        }()
       }, {
         key: "normalizeOptions",
         value: function normalizeOptions() {

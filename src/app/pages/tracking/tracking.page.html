@@ -6,6 +6,11 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="light" fullscreen>
+<ion-content color="default" fullscreen>
   <ion-searchbar autocorrect="off" color="dark" type="text"></ion-searchbar>
+  <ion-segment class="ion-padding" color="tertiary">
+    <ion-segment-button value="all"> <ion-label>All</ion-label></ion-segment-button>
+    <ion-segment-button value="received"> <ion-label>To Me</ion-label></ion-segment-button>
+    <ion-segment-button value="sent"> <ion-label>From Me</ion-label></ion-segment-button>
+  </ion-segment>
 </ion-content>

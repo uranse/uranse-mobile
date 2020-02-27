@@ -38,3 +38,6 @@
 .ng-valid[required], .ng-valid.required, .ng-invalid[required], .ng-invalid.required  {
   border-left: 2px solid #7951ff;
 }
+.form-animate{
+  transition: all .3s ease-out;
+}

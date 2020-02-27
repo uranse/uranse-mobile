@@ -4543,24 +4543,35 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }));
         }
       }, {
-        key: "keys",
-        value: function keys() {
+        key: "getIsLoggedIn",
+        value: function getIsLoggedIn(storageKey) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee6() {
-            var keys;
+            var ret;
             return regeneratorRuntime.wrap(function _callee6$(_context6) {
               while (1) {
                 switch (_context6.prev = _context6.next) {
                   case 0:
                     _context6.next = 2;
-                    return Storage.keys();
+                    return Storage.get({
+                      key: storageKey
+                    });
 
                   case 2:
-                    keys = _context6.sent;
-                    console.log('Got keys: ', keys);
+                    ret = _context6.sent;
 
-                  case 4:
+                    if (!ret.value) {
+                      _context6.next = 7;
+                      break;
+                    }
+
+                    return _context6.abrupt("return", ret.value);
+
+                  case 7:
+                    return _context6.abrupt("return", false);
+
+                  case 8:
                   case "end":
                     return _context6.stop();
                 }
@@ -4569,19 +4580,24 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }));
         }
       }, {
-        key: "clear",
-        value: function clear() {
+        key: "keys",
+        value: function keys() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee7() {
+            var keys;
             return regeneratorRuntime.wrap(function _callee7$(_context7) {
               while (1) {
                 switch (_context7.prev = _context7.next) {
                   case 0:
                     _context7.next = 2;
-                    return Storage.clear();
+                    return Storage.keys();
 
                   case 2:
+                    keys = _context7.sent;
+                    console.log('Got keys: ', keys);
+
+                  case 4:
                   case "end":
                     return _context7.stop();
                 }
@@ -4590,8 +4606,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }));
         }
       }, {
-        key: "removeItem",
-        value: function removeItem(storageKey) {
+        key: "clear",
+        value: function clear() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee8() {
@@ -4600,9 +4616,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 switch (_context8.prev = _context8.next) {
                   case 0:
                     _context8.next = 2;
-                    return Storage.remove({
-                      key: storageKey
-                    });
+                    return Storage.clear();
 
                   case 2:
                   case "end":
@@ -4613,8 +4627,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           }));
         }
       }, {
-        key: "setIsNotNewUser",
-        value: function setIsNotNewUser() {
+        key: "removeItem",
+        value: function removeItem(storageKey) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee9() {
@@ -4623,9 +4637,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 switch (_context9.prev = _context9.next) {
                   case 0:
                     _context9.next = 2;
-                    return Storage.set({
-                      key: 'not_new_user',
-                      value: 'true'
+                    return Storage.remove({
+                      key: storageKey
                     });
 
                   case 2:
@@ -4634,6 +4647,30 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 }
               }
             }, _callee9);
+          }));
+        }
+      }, {
+        key: "setIsNotNewUser",
+        value: function setIsNotNewUser() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee10() {
+            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+              while (1) {
+                switch (_context10.prev = _context10.next) {
+                  case 0:
+                    _context10.next = 2;
+                    return Storage.set({
+                      key: 'not_new_user',
+                      value: 'true'
+                    });
+
+                  case 2:
+                  case "end":
+                    return _context10.stop();
+                }
+              }
+            }, _callee10);
           }));
         }
       }]);

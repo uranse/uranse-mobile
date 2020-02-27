@@ -1,5 +1,18 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["pages-welcome-welcome-module"],{
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/header-logo/header-logo.component.html":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/header-logo/header-logo.component.html ***!
+  \*********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header>\r\n  <ion-toolbar color=\"primary\">\r\n    <ion-title>\r\n      <img class=\"headerlogog\" src=\"/assets/images/uranselogo-white.png\" />\r\n    </ion-title>\r\n  </ion-toolbar>\r\n</ion-header>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/slides/slides.component.html":
 /*!***********************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/slides/slides.component.html ***!
@@ -50,12 +63,14 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ComponentsModule", function() { return ComponentsModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _slides_slides_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slides/slides.component */ "./src/app/components/slides/slides.component.ts");
-/* harmony import */ var _start_button_start_button_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./start-button/start-button.component */ "./src/app/components/start-button/start-button.component.ts");
+/* harmony import */ var _header_logo_header_logo_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header-logo/header-logo.component */ "./src/app/components/header-logo/header-logo.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _slides_slides_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./slides/slides.component */ "./src/app/components/slides/slides.component.ts");
+/* harmony import */ var _start_button_start_button_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./start-button/start-button.component */ "./src/app/components/start-button/start-button.component.ts");
+
 
 
 
@@ -70,18 +85,70 @@ __webpack_require__.r(__webpack_exports__);
 let ComponentsModule = class ComponentsModule {
 };
 ComponentsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
         declarations: [
-            _slides_slides_component__WEBPACK_IMPORTED_MODULE_5__["SlidesComponent"],
-            _start_button_start_button_component__WEBPACK_IMPORTED_MODULE_6__["StartButtonComponent"],
+            _slides_slides_component__WEBPACK_IMPORTED_MODULE_6__["SlidesComponent"],
+            _start_button_start_button_component__WEBPACK_IMPORTED_MODULE_7__["StartButtonComponent"],
+            _header_logo_header_logo_component__WEBPACK_IMPORTED_MODULE_1__["HeaderLogoComponent"]
+            //FeedCardComponent,
+            //FeedUpdateComponent,
+            // TimeagoComponent,
+            //TimeAgoPipe
         ],
         exports: [
-            _slides_slides_component__WEBPACK_IMPORTED_MODULE_5__["SlidesComponent"],
-            _start_button_start_button_component__WEBPACK_IMPORTED_MODULE_6__["StartButtonComponent"],
+            _slides_slides_component__WEBPACK_IMPORTED_MODULE_6__["SlidesComponent"],
+            _start_button_start_button_component__WEBPACK_IMPORTED_MODULE_7__["StartButtonComponent"],
+            _header_logo_header_logo_component__WEBPACK_IMPORTED_MODULE_1__["HeaderLogoComponent"]
+            // FeedCardComponent,
+            //FeedUpdateComponent,
+            //TimeagoComponent
         ],
-        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"]]
+        imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"], _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"]]
     })
 ], ComponentsModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/header-logo/header-logo.component.scss":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/header-logo/header-logo.component.scss ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".headerlogog {\n  width: 100px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9oZWFkZXItbG9nby9DOlxcVXNlcnNcXHZhZGV5ZW1pXFxEb2N1bWVudHNcXGdvYXZpbmNlXFx1cmFuc2UtbW9iaWxlL3NyY1xcYXBwXFxjb21wb25lbnRzXFxoZWFkZXItbG9nb1xcaGVhZGVyLWxvZ28uY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2NvbXBvbmVudHMvaGVhZGVyLWxvZ28vaGVhZGVyLWxvZ28uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxZQUFBO0FDQ0YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnRzL2hlYWRlci1sb2dvL2hlYWRlci1sb2dvLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhlYWRlcmxvZ29ne1xyXG4gIHdpZHRoOiAxMDBweFxyXG59IiwiLmhlYWRlcmxvZ29nIHtcbiAgd2lkdGg6IDEwMHB4O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/header-logo/header-logo.component.ts":
+/*!*****************************************************************!*\
+  !*** ./src/app/components/header-logo/header-logo.component.ts ***!
+  \*****************************************************************/
+/*! exports provided: HeaderLogoComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderLogoComponent", function() { return HeaderLogoComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let HeaderLogoComponent = class HeaderLogoComponent {
+    constructor() { }
+};
+HeaderLogoComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-header-logo',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./header-logo.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/header-logo/header-logo.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./header-logo.component.scss */ "./src/app/components/header-logo/header-logo.component.scss")).default]
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+], HeaderLogoComponent);
 
 
 

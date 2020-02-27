@@ -1,4 +1,6 @@
+import { SpinnerService } from './../../services/spinner.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-tracking',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrackingPage implements OnInit {
 
-  constructor() { }
+  constructor(public spinner: SpinnerService) { }
 
   ngOnInit() {
+  }
+  ionViewWillEnter() {
+    this.spinner.presentLoading();
+  }
+  ionViewDidEnter() {
+    this.spinner.dismiss();
   }
 
 }

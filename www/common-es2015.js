@@ -679,6 +679,163 @@ const findCheckedOption = (el, tagName) => {
 
 
 
+/***/ }),
+
+/***/ "./src/app/services/alert.service.ts":
+/*!*******************************************!*\
+  !*** ./src/app/services/alert.service.ts ***!
+  \*******************************************/
+/*! exports provided: AlertService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlertService", function() { return AlertService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+let AlertService = class AlertService {
+    constructor(alertController) {
+        this.alertController = alertController;
+    }
+    presentAlertConfirm(header, message) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            let choice;
+            const alert = yield this.alertController.create({
+                header: header,
+                message: message,
+                buttons: [
+                    {
+                        text: 'Cancel',
+                        role: 'cancel'
+                    },
+                    {
+                        text: 'Okay',
+                        role: 'okay'
+                    }
+                ]
+            });
+            yield alert.present();
+            yield alert.onDidDismiss().then(data => {
+                choice = data;
+            });
+            return choice;
+        });
+    }
+    presentCustomAlert(header, message, cancelText, okText) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            let choice;
+            const alert = yield this.alertController.create({
+                header: header,
+                message: message,
+                buttons: [
+                    {
+                        text: cancelText,
+                        role: 'cancel'
+                    },
+                    {
+                        text: okText,
+                        role: 'okay'
+                    }
+                ]
+            });
+            yield alert.present();
+            yield alert.onDidDismiss().then(data => {
+                choice = data;
+            });
+            return choice;
+        });
+    }
+};
+AlertService.ctorParameters = () => [
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"] }
+];
+AlertService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["AlertController"]])
+], AlertService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/spinner.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/services/spinner.service.ts ***!
+  \*********************************************/
+/*! exports provided: SpinnerService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SpinnerService", function() { return SpinnerService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+
+
+
+let SpinnerService = class SpinnerService {
+    constructor(loadingController) {
+        this.loadingController = loadingController;
+        this.isLoading = false;
+    }
+    presentLoading() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            return yield this.loadingController.create({
+                duration: 5000,
+                spinner: 'lines',
+                showBackdrop: true
+            }).then(a => {
+                a.present().then(() => {
+                    console.log('Presented');
+                    if (!this.isLoading) {
+                        a.dismiss().then(() => console.log('abort presenting'));
+                    }
+                });
+            });
+        });
+    }
+    presentLoadingWithOptions() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const loading = yield this.loadingController.create({
+                spinner: null,
+                duration: 5000,
+                message: 'Click the backdrop to dismiss early...',
+                translucent: true,
+                cssClass: 'custom-class custom-loading',
+                backdropDismiss: true
+            });
+            yield loading.present();
+            const { role, data } = yield loading.onDidDismiss();
+            console.log('Loading dismissed with role:', role);
+        });
+    }
+    dismiss() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = false;
+            return yield this.loadingController.dismiss();
+        });
+    }
+};
+SpinnerService.ctorParameters = () => [
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"] }
+];
+SpinnerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"]])
+], SpinnerService);
+
+
+
 /***/ })
 
 }]);

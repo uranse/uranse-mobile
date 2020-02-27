@@ -5,17 +5,23 @@ import { LoadingController } from '@ionic/angular';
   providedIn: 'root'
 })
 export class SpinnerService {
+  isLoading = false;
   constructor(public loadingController: LoadingController) {}
 
-  async presentLoadingWithText() {
-    const loading = await this.loadingController.create({
-      message: 'Please wait...',
-      duration: 2000
+  async presentLoading() {
+    this.isLoading = true;
+    return await this.loadingController.create({
+      duration: 5000,
+      spinner: 'lines',
+      showBackdrop: true
+    }).then(a => {
+      a.present().then(() => {
+        console.log('Presented');
+        if (!this.isLoading) {
+          a.dismiss().then(() => console.log('abort presenting'));
+        }
+      });
     });
-    await loading.present();
-
-    const { role, data } = await loading.onDidDismiss();
-    console.log('Loading dismissed!');
   }
 
   async presentLoadingWithOptions() {
@@ -33,13 +39,8 @@ export class SpinnerService {
     console.log('Loading dismissed with role:', role);
   }
 
-  async presentLoadingWithoutText() {
-    const loading = await this.loadingController.create({
-      spinner: "crescent",
-      duration: 2000
-    });
-    await loading.present();
-    const { role, data } = await loading.onDidDismiss();
-    console.log('Loading dismissed!');
+  async dismiss() {
+   this.isLoading = false;
+   return await this.loadingController.dismiss();
   }
 }

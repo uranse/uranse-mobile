@@ -2618,6 +2618,17 @@ let StorageService = class StorageService {
             });
         });
     }
+    getIsLoggedIn(storageKey) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            const ret = yield Storage.get({ key: storageKey });
+            if (ret.value) {
+                return ret.value;
+            }
+            else {
+                return false;
+            }
+        });
+    }
     keys() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             const keys = yield Storage.keys();
