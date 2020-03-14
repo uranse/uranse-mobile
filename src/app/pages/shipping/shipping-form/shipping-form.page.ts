@@ -1,3 +1,4 @@
+import { PackageTypes } from './../../../config/packageTypes';
 import { SpinnerService } from './../../../services/spinner.service';
 import { AlertService } from './../../../services/alert.service';
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -17,9 +18,14 @@ export class ShippingFormPage implements OnInit {
   packageForm: FormGroup;
   countries = [];
   states = [];
-  step = 1;
+  packageTypes = [];
+  step = 0;
   totalStep = 4;
   progressValue = this.step / this.totalStep;
+  maxWeight;
+  maxHeight;
+  maxLength;
+  maxWidth;
 
   validations = {
     'name': [
@@ -53,33 +59,37 @@ export class ShippingFormPage implements OnInit {
       { type: 'required', message: 'Email is required.' },
       { type: 'pattern', message: 'Enter a valid email.' }
     ],
-    'weight':[
+    'weight': [
       { type: 'required', message: 'Weight is required.' },
-      { type: 'pattern', message: 'Weight entered is not a number.' },
+      { type: 'pattern', message: 'Weight entered is invalid.' },
       { type: 'min', message: 'Weight min value not met.' },
       { type: 'max', message: 'Weight max value exceeded.' },
     ],
-    'length':[
+    'length': [
       { type: 'required', message: 'Length is required.' },
-      { type: 'pattern', message: 'Length entered is not a whole number.' },
+      { type: 'pattern', message: 'Length entered is invalid.' },
       { type: 'min', message: 'Length min value not met.' },
       { type: 'max', message: 'Length max value exceeded.' },
     ],
-    'width':[
+    'width': [
       { type: 'required', message: 'Width is required.' },
-      { type: 'pattern', message: 'Width entered is not a whole number.' },
+      { type: 'pattern', message: 'Width entered is invalid.' },
       { type: 'min', message: 'Width min value not met.' },
       { type: 'max', message: 'Width max value exceeded.' },
     ],
-    'height':[
+    'height': [
       { type: 'required', message: 'Height is required.' },
-      { type: 'pattern', message: 'Height entered is not a number.' },
+      { type: 'pattern', message: 'Height entered is invalid.' },
       { type: 'min', message: 'Height min value not met.' },
       { type: 'max', message: 'Height max value exceeded.' },
     ],
-    'value':[
-      { type: 'pattern', message: 'Weight entered is not a number.' }
-    ]
+    'value': [
+      { type: 'pattern', message: 'value entered is invalid.' }
+    ],
+    'description': [
+      { type: 'minlength', message: 'description must be at least 5 characters long.' },
+      { type: 'maxlength', message: 'description cannot be more than 100 characters long.' },
+    ],
   };
   constructor(private router: Router, private alert: AlertService, private spinner: SpinnerService) { }
 
@@ -91,9 +101,20 @@ export class ShippingFormPage implements OnInit {
   }
 
   ngOnInit(): void {
+    this.step = 0;
     this.countries = COUNTRYLIST;
-    this.states = COUNTRYLIST[0].states;
-
+    this.states = this.countries[0].states;
+   // this.packageTypes = PackageTypes;
+   // this.packaging = '';
+    this.maxWeight = 150;
+    this.maxHeight = 100;
+    this.maxLength = 100;
+    this.maxWidth = 100;
+    // this.maxHeight = PackageTypes[0].maxHeight;
+    // this.maxLength = PackageTypes[0].maxLength;
+    // this.maxWidth = PackageTypes[0].maxLength;
+    //this.dimenssionUnit = '';
+    //this.packageDescription = PackageTypes[0].description;
     this.senderForm = new FormGroup({
       'name': new FormControl('', Validators.required),
       'businessname': new FormControl('', Validators.compose([
@@ -115,7 +136,7 @@ export class ShippingFormPage implements OnInit {
         Validators.minLength(3)
       ])),
       'city': new FormControl('', Validators.required),
-      'state': new FormControl(this.countries[0].states[0], Validators.required),
+      'state': new FormControl({disabled: true}, Validators.required),
       'phone': new FormControl('', Validators.compose([
         Validators.required,
         Validators.pattern('^\\+[1-9]\\d{1,14}$')
@@ -148,7 +169,7 @@ export class ShippingFormPage implements OnInit {
         Validators.minLength(3)
       ])),
       'city': new FormControl('', Validators.required),
-      'state': new FormControl(this.countries[0].states[0], Validators.required),
+      'state': new FormControl({disabled: true}, Validators.required),
       'phone': new FormControl('', Validators.compose([
         Validators.required,
         Validators.pattern('^\\+[1-9]\\d{1,14}$')
@@ -160,37 +181,53 @@ export class ShippingFormPage implements OnInit {
     });
 
     this.packageForm = new FormGroup({
-      'packageType': new FormControl('', Validators.required),
+      //'packageType': new FormControl(this.packageTypes[0], Validators.required),
       'weight': new FormControl('', Validators.compose([
         Validators.required,
-        Validators.pattern('^\\d{0,3}(\\.\\d{1,2})?$'),
+        Validators.pattern('^[0-9]*(\\.\\d{1,2})?$'),
         Validators.min(1),
-        Validators.max(150)
+        Validators.max(this.maxWeight)
       ])),
       'length': new FormControl('', Validators.compose([
         Validators.required,
         Validators.pattern('^[0-9]*$'),
         Validators.min(1),
-        Validators.max(100)
+        Validators.max(this.maxLength)
       ])),
       'width': new FormControl('', Validators.compose([
         Validators.required,
         Validators.pattern('^[0-9]*$'),
         Validators.min(1),
-        Validators.max(100)
+        Validators.max(this.maxWidth)
       ])),
       'height': new FormControl('', Validators.compose([
         Validators.required,
         Validators.pattern('^[0-9]*$'),
         Validators.min(1),
-        Validators.max(100)
+        Validators.max(this.maxHeight)
       ])),
+      'description': new FormControl('', Validators.compose([
+        Validators.minLength(5),
+        Validators.maxLength(100)
+      ])),
+      'value': new FormControl('', Validators.pattern('^[0-9]*$')),
+      'isHazardous': new FormControl('false'),
+      'requireSignature': new FormControl('false'),
     });
 
   }
   onCountryChange(e) {
     this.states = e.target.value.states;
-  };
+  }
+  // onChangePackaging(e) {
+  //   //this.packaging = e.target.value.type;
+  //   this.maxWeight = e.target.value.maxWeight;
+  //   this.maxHeight = e.target.value.maxHeight;
+  //   this.maxLength = e.target.value.maxLength;
+  //   this.maxWidth = e.target.value.maxWidth;
+  //   this.dimenssionUnit = e.target.value.lengthUnit;
+  //   this.packageDescription = e.target.value.description;
+  // }
 
   next() {
     this.spinner.presentLoading();
@@ -201,7 +238,7 @@ export class ShippingFormPage implements OnInit {
 
   prev() {
     this.spinner.presentLoading();
-    if (this.step === 1) {
+    if (this.step === 0) {
       this.router.navigate(['home/ship']);
       this.senderForm.reset();
       this.destinationForm.reset();

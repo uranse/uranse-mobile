@@ -18,16 +18,18 @@
       </ion-button>
     </ion-buttons>
     <ion-progress-bar
-      color="tertiary"
+      color="success"
       value="{{ progressValue }}"
     ></ion-progress-bar>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <form [formGroup]="senderForm" *ngIf="step == 1" class="ion-padding">
-    <div>
-      <ion-text><h4>Where are you shipping from?</h4></ion-text>
-    </div>
+  <ion-list>
+  <ion-list-header class="header" *ngIf="step == 0"><ion-label><b>Where are you shipping from?</b></ion-label></ion-list-header>
+  <ion-list-header class="header" *ngIf="step == 1"><ion-label><b>Where is this shipment going?</b></ion-label></ion-list-header>
+  <ion-list-header class="header" *ngIf="step == 2"><ion-label><b>What kind of packaging are you using?</b></ion-label></ion-list-header>
+  <ng-container *ngIf="step == 0">
+  <form [formGroup]="senderForm" autocomplete="on" autocapitalize="words" *ngIf="step == 0" class="ion-padding">
     <ion-list class="inputs-list" lines="full">
       <!-- Name -->
       <ion-item class="input-item">
@@ -230,7 +232,6 @@
           formControlName="phone"
           clearInput
           required
-          placeholder="{{ senderForm.value.country.phoneCode }}"
         ></ion-input>
       </ion-item>
       <div class="error-container">
@@ -275,7 +276,6 @@
         </ng-container>
       </div>
     </ion-list>
-
     <ion-button
       expand="full"
       color="tertiary"
@@ -285,10 +285,9 @@
       Continue
     </ion-button>
   </form>
-  <form [formGroup]="destinationForm" *ngIf="step == 2" class="ion-padding form-animate">
-    <div>
-      <ion-text><h4>Where is this shipment going?</h4></ion-text>
-    </div>
+  </ng-container>
+  <ng-container *ngIf="step == 1">
+  <form [formGroup]="destinationForm" autocomplete="on" autocapitalize="words" *ngIf="step == 1" class="ion-padding form-animate">
     <ion-list class="inputs-list" lines="full">
       <!-- Name -->
       <ion-item class="input-item">
@@ -300,6 +299,7 @@
           formControlName="name"
           clearInput
           required
+          autocapitalize="true"
         ></ion-input>
       </ion-item>
       <div class="error-container">
@@ -493,7 +493,6 @@
           formControlName="phone"
           clearInput
           required
-          placeholder="{{ destinationForm.value.country.phoneCode }}"
         ></ion-input>
       </ion-item>
       <div class="error-container">
@@ -550,4 +549,165 @@
       Continue
     </ion-button>
   </form>
+  </ng-container>
+  <ng-container *ngIf="step == 2">
+    <form [formGroup]="packageForm" class="ion-padding form-animate" >
+      <ion-list class="inputs-list" lines="full">
+        <!--Weight-->
+        <ion-item lines="none"  class="input-item">
+          <ion-item class="input-item" slot="start">
+            <ion-label position="floating">&nbsp;Weight</ion-label>
+            <ion-input
+            formControlName="weight"
+            type="text"
+            clearInput
+            required
+            ></ion-input>
+          </ion-item>
+          <ion-item slot="end" class="input-item"> 
+            <ion-label position="floating">&nbsp;Unit</ion-label>
+            <ion-select>
+              <ion-select-option selected [value]="lbs">lbs</ion-select-option>
+              <ion-select-option [value]="kg">Kg</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-item>
+        <div class="error-container">
+          <ng-container *ngFor="let validation of validations.weight">
+            <div
+              class="error-message"
+              *ngIf="packageForm.get('weight').hasError(validation.type) && (packageForm.get('weight').dirty || packageForm.get('weight').touched)">
+              <ion-icon name="information-circle-outline"></ion-icon>
+              <span>{{ validation.message }}</span>
+            </div>
+          </ng-container>
+        </div>
+        <!--Dimensions-->
+        <ion-item lines="none" class="input-item">
+          <!--Length-->
+          <ion-item class="input-item">
+            <ion-label position="floating">&nbsp;Length</ion-label>
+            <ion-input
+            formControlName="length"
+            type="text"
+            clearInput
+            required
+            ></ion-input>
+          </ion-item>
+          <!--Width-->
+          <ion-item class="input-item">
+            <ion-label position="floating">&nbsp;Width</ion-label>
+            <ion-input
+            formControlName="width"
+            type="text"
+            clearInput
+            required
+            ></ion-input>
+          </ion-item>
+          <!--Height-->
+          <ion-item class="input-item">
+            <ion-label position="floating">&nbsp;Height</ion-label>
+            <ion-input
+            formControlName="height"
+            type="text"
+            clearInput
+            required
+            ></ion-input>
+          </ion-item>
+          <!--Unit-->
+          <ion-item slot="end" class="input-item"> 
+            <ion-label position="floating">&nbsp;Unit</ion-label>
+            <ion-select>
+              <ion-select-option selected [value]="in">in</ion-select-option>
+              <ion-select-option [value]="cm">cm</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-item>
+        <ng-container>
+          <div class="error-container">
+            <ng-container *ngFor="let validation of validations.length">
+              <div
+                class="error-message"
+                *ngIf="packageForm.get('length').hasError(validation.type) && (packageForm.get('length').dirty || packageForm.get('length').touched)">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <span>{{ validation.message }}</span>
+              </div>
+            </ng-container>
+          </div>
+          <div class="error-container">
+            <ng-container *ngFor="let validation of validations.width">
+              <div
+                class="error-message"
+                *ngIf="packageForm.get('width').hasError(validation.type) && (packageForm.get('width').dirty || packageForm.get('width').touched)">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <span>{{ validation.message }}</span>
+              </div>
+            </ng-container>
+          </div>
+          <div class="error-container">
+            <ng-container *ngFor="let validation of validations.height">
+              <div
+                class="error-message"
+                *ngIf="packageForm.get('height').hasError(validation.type) && (packageForm.get('height').dirty || packageForm.get('height').touched)">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <span>{{ validation.message }}</span>
+              </div>
+            </ng-container>
+          </div>
+        </ng-container>
+        <!--Package description-->
+        <ion-item class="input-item">
+          <ion-label  position="floating">&nbsp;Description</ion-label>
+          <ion-textarea 
+          formControlName="description"
+          clearInput
+          auto-grow="true"
+          autocapitalize="on"
+          placeholder="Please describe what you are shipping"></ion-textarea>
+        </ion-item>
+        <div class="error-container">
+          <ng-container *ngFor="let validation of validations.description">
+            <div
+              class="error-message"
+              *ngIf="packageForm.get('value').hasError(validation.type) && (packageForm.get('value').dirty || packageForm.get('value').touched)">
+              <ion-icon name="information-circle-outline"></ion-icon>
+              <span>{{ validation.message }}</span>
+            </div>
+          </ng-container>
+        </div>
+        <!--Declared value-->
+        <ion-item class="input-item">
+          <ion-label  position="floating">&nbsp;Declared Value</ion-label>
+          <ion-input autocomplete="on" formControlName="value" type="text" clearInput ></ion-input>
+        </ion-item>
+        <div class="error-container">
+          <ng-container *ngFor="let validation of validations.value">
+            <div
+              class="error-message"
+              *ngIf="packageForm.get('value').hasError(validation.type) && (packageForm.get('value').dirty || packageForm.get('value').touched)">
+              <ion-icon name="information-circle-outline"></ion-icon>
+              <span>{{ validation.message }}</span>
+            </div>
+          </ng-container>
+        </div>
+        <ion-item lines="none" class="input-item"> 
+          <ion-label>Include lithium batteries</ion-label>
+          <ion-toggle formControlName="isHazardous"></ion-toggle>
+        </ion-item>
+        <ion-item lines="none" class="input-item"> 
+          <ion-label>Require signature</ion-label>
+          <ion-toggle formControlName="requireSignature"></ion-toggle>
+        </ion-item>
+      </ion-list>
+      <ion-button
+      expand="full"
+      color="tertiary"
+      [disabled]="!packageForm.valid"
+      (click)="next()"
+    >
+      Continue
+    </ion-button>
+    </form>
+  </ng-container>
+</ion-list>
 </ion-content>

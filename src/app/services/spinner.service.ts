@@ -1,8 +1,13 @@
-import { Injectable } from '@angular/core';
+import { Injectable, NgModule } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 
 @Injectable({
   providedIn: 'root'
+})
+@NgModule({
+  exports: [
+    SpinnerService
+  ]
 })
 export class SpinnerService {
   isLoading = false;
