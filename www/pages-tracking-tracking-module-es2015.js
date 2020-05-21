@@ -53,7 +53,7 @@ TrackingPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _ionic_angular__WEBPACK_IMPORTED_MODULE_5__["IonicModule"],
             _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(routes)
         ],
-        declarations: [_tracking_page__WEBPACK_IMPORTED_MODULE_6__["TrackingPage"]]
+        declarations: [_tracking_page__WEBPACK_IMPORTED_MODULE_6__["TrackingPage"]],
     })
 ], TrackingPageModule);
 
@@ -70,7 +70,7 @@ TrackingPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("ion-title {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvdHJhY2tpbmcvQzpcXFVzZXJzXFx2YWRleWVtaVxcRG9jdW1lbnRzXFxnb2F2aW5jZVxcdXJhbnNlLW1vYmlsZS9zcmNcXGFwcFxccGFnZXNcXHRyYWNraW5nXFx0cmFja2luZy5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL3RyYWNraW5nL3RyYWNraW5nLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy90cmFja2luZy90cmFja2luZy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tdGl0bGV7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuIiwiaW9uLXRpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("ion-title {\n  text-align: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9taWRlL0Rlc2t0b3AvVXJhbnNlL3VyYW5zZS1tb2JpbGUvc3JjL2FwcC9wYWdlcy90cmFja2luZy90cmFja2luZy5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL3RyYWNraW5nL3RyYWNraW5nLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGtCQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy90cmFja2luZy90cmFja2luZy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tdGl0bGV7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuIiwiaW9uLXRpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufSJdfQ== */");
 
 /***/ }),
 

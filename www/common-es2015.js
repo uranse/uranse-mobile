@@ -777,10 +777,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+var SpinnerService_1;
 
 
 
-let SpinnerService = class SpinnerService {
+let SpinnerService = SpinnerService_1 = class SpinnerService {
     constructor(loadingController) {
         this.loadingController = loadingController;
         this.isLoading = false;
@@ -827,9 +828,14 @@ let SpinnerService = class SpinnerService {
 SpinnerService.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"] }
 ];
-SpinnerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+SpinnerService = SpinnerService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
         providedIn: 'root'
+    }),
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        exports: [
+            SpinnerService_1
+        ]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"]])
 ], SpinnerService);

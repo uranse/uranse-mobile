@@ -1414,7 +1414,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @ionic/angular */
     "./node_modules/@ionic/angular/dist/fesm5.js");
 
-    var SpinnerService =
+    var SpinnerService_1;
+
+    var SpinnerService = SpinnerService_1 =
     /*#__PURE__*/
     function () {
       function SpinnerService(loadingController) {
@@ -1546,8 +1548,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }];
     };
 
-    SpinnerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+    SpinnerService = SpinnerService_1 = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
+    }), Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      exports: [SpinnerService_1]
     }), tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["LoadingController"]])], SpinnerService);
     /***/
   }

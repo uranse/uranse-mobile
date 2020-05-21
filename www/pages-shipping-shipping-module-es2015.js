@@ -98,7 +98,7 @@ ShippingPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("ion-list > ion-item > ion-label {\n  margin-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFnZXMvc2hpcHBpbmcvQzpcXFVzZXJzXFx2YWRleWVtaVxcRG9jdW1lbnRzXFxnb2F2aW5jZVxcdXJhbnNlLW1vYmlsZS9zcmNcXGFwcFxccGFnZXNcXHNoaXBwaW5nXFxzaGlwcGluZy5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL3NoaXBwaW5nL3NoaXBwaW5nLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGlCQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9zaGlwcGluZy9zaGlwcGluZy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tbGlzdCA+IGlvbi1pdGVtID4gaW9uLWxhYmVsIHtcclxuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xyXG59IiwiaW9uLWxpc3QgPiBpb24taXRlbSA+IGlvbi1sYWJlbCB7XG4gIG1hcmdpbi1sZWZ0OiAxMHB4O1xufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("ion-list > ion-item > ion-label {\n  margin-left: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9taWRlL0Rlc2t0b3AvVXJhbnNlL3VyYW5zZS1tb2JpbGUvc3JjL2FwcC9wYWdlcy9zaGlwcGluZy9zaGlwcGluZy5wYWdlLnNjc3MiLCJzcmMvYXBwL3BhZ2VzL3NoaXBwaW5nL3NoaXBwaW5nLnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGlCQUFBO0FDQ0oiLCJmaWxlIjoic3JjL2FwcC9wYWdlcy9zaGlwcGluZy9zaGlwcGluZy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tbGlzdCA+IGlvbi1pdGVtID4gaW9uLWxhYmVsIHtcbiAgICBtYXJnaW4tbGVmdDogMTBweDtcbn0iLCJpb24tbGlzdCA+IGlvbi1pdGVtID4gaW9uLWxhYmVsIHtcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XG59Il19 */");
 
 /***/ }),
 

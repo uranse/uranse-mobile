@@ -21,7 +21,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-content>\r\n   <ion-router-outlet></ion-router-outlet>\r\n</ion-content>\r\n";
+    __webpack_exports__["default"] = "<ion-content>\n   <ion-router-outlet></ion-router-outlet>\n</ion-content>\n";
     /***/
   },
 
