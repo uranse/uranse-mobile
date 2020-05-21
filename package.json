@@ -22,7 +22,7 @@
     "@angular/router": "~8.2.14",
     "@capacitor/android": "^2.1.0",
     "@capacitor/core": "1.4.0",
-    "@capacitor/ios": "^1.4.0",
+    "@capacitor/ios": "^2.1.0",
     "@ionic-native/action-sheet": "^5.26.0",
     "@ionic-native/android-permissions": "^5.26.0",
     "@ionic-native/core": "^5.0.0",
