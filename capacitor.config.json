@@ -1,29 +1,8 @@
 {
   "appId": "volumtech.uranse.app",
-  "appName": "URANSE-MOBILE",
+  "appName": "URANSE",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "cordova": {
-    "preferences": {
-      "ScrollEnabled": "false",
-      "android-minSdkVersion": "19",
-      "BackupWebStorage": "none",
-      "SplashMaintainAspectRatio": "true",
-      "FadeSplashScreenDuration": "300",
-      "SplashShowOnlyFirstTime": "false",
-      "SplashScreen": "screen",
-      "SplashScreenDelay": "3000"
-    }
-  },
-  "plugins": {
-    "CapacitorFirebaseAuth": {
-      "providers": [
-        "phone"
-      ],
-      "languageCode": "en",
-      "nativeAuth": false,
-      "permissions": {}
-    }
-  }
+  "cordova": {}
 }
