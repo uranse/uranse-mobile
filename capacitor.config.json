@@ -4,5 +4,10 @@
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "cordova": {}
+  "cordova": {},
+  "CapacitorFirebaseAuth": {
+    "providers": ["google.com", "twitter.com", "facebook.com"],
+    "languageCode": "en",
+    "nativeAuth": false
+  }
 }

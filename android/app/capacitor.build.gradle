@@ -9,7 +9,7 @@ android {
 
 apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
 dependencies {
-
+    implementation project(':capacitor-firebase-auth')
     implementation "com.google.firebase:firebase-auth:19.2.+"
 }
 apply from: "../../node_modules/cordova-support-google-services/build.gradle"
